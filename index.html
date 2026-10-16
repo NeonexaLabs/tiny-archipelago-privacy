@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy - Tiny Archipelago</title>
+<meta name="description" content="The privacy policy of Tiny Archipelago, a cozy low-poly island game for children and families, by NeonexaLabs.">
+<meta name="theme-color" content="#8fcdf3">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="assets/favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
+<link rel="preload" href="assets/fonts/Nunito.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Nunito;src:url(assets/fonts/Nunito.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
+:root{--sky:#8fcdf3;--sky-light:#e4f4fd;--panel:#fff8ec;--edge:#ead6b8;--text:#5b4636;--muted:#7a6652;--green:#7cc25b;--green-dark:#3f7a2b;
+  --gold:#f2c35b;--gold-dark:#c9962e;--chip:#fffdf7;--btn:#fff1d6;--btn-edge:#e3c9a0;--callout:#e3f2d3;--callout-edge:#5a9a40;--callout-soft:#b9dda3;--th:#f6e7cc}
+*{box-sizing:border-box}
+html{color-scheme:only light;scroll-behavior:smooth;scroll-padding-top:16px}
+body{position:relative;margin:0;color:var(--text);background:var(--sky-light) linear-gradient(var(--sky),#c6e7f9 440px,var(--sky-light) 900px) no-repeat;
+  font:600 1rem/1.62 Nunito,"Trebuchet MS","Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.sky{position:absolute;top:0;left:0;right:0;height:720px;overflow:hidden;pointer-events:none}
+.cloud{position:absolute;background:linear-gradient(168deg,#fff 50%,#eef4fb 50% 72%,#dce8f4 72%);animation:float-in 5s ease-out both;
+  clip-path:polygon(4% 96%,0 70%,10% 50%,26% 48%,34% 22%,52% 6%,70% 20%,78% 40%,92% 44%,100% 70%,96% 94%,72% 100%,48% 92%,22% 100%)}
+.c3,.c5{clip-path:polygon(3% 100%,0 72%,12% 56%,30% 54%,42% 30%,58% 22%,72% 40%,90% 38%,100% 62%,97% 100%,70% 92%,38% 100%)}
+.c2,.c4{scale:-1 1}
+.c1{left:3%;top:12px;width:150px;height:62px}
+.c2{right:4%;top:30px;width:110px;height:46px}
+.c3,.c4,.c5{display:none}
+@keyframes float-in{from{transform:translateX(-30px)}}
+.wrap{position:relative;max-width:720px;margin:0 auto;padding:52px 16px 56px}
+.hero{display:block;width:100%;height:auto;border:4px solid var(--panel);border-radius:22px;background:#cfe9fb;box-shadow:0 10px 26px rgba(84,56,30,.24)}
+.title-card{position:relative;margin:-14px 10px 0;padding:16px 20px 18px}
+h1{margin:0 0 8px;font-size:clamp(1.9rem,7vw,2.6rem);line-height:1.1;font-weight:900}
+.meta{display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;align-items:baseline;margin:0}
+.meta div{display:contents}
+.meta dt{color:var(--muted);font-weight:700}
+.meta dd{margin:0;min-width:0;font-weight:700;overflow-wrap:anywhere}
+.mail{position:relative}
+.mail::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-10px}
+.callout{margin:24px 0 0}
+.jump{margin:22px 0 6px}
+.jump p{margin:0 0 8px;color:var(--muted);font-size:.9rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+nav ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+nav li{margin:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:6px 15px;color:var(--text);font-size:.95rem;font-weight:800;line-height:1.3;
+  text-decoration:none;background:var(--btn);border:2px solid var(--btn-edge);border-bottom-width:4px;border-radius:14px}
+nav a:hover{background:var(--callout);border-color:var(--callout-edge);color:var(--text)}
+nav a:active{background:#f1dfc0;padding:8px 15px 6px;border-bottom-width:2px}
+.title-card,.card,.callout{background:var(--panel);border:2px solid var(--edge);border-radius:18px;box-shadow:0 4px 12px rgba(84,56,31,.18)}
+.card,.callout{padding:18px 22px 20px}
+.card>:last-child,.callout>:last-child{margin-bottom:0}
+.card{margin:16px 0}
+.callout{background:var(--callout);border-color:var(--callout-edge)}
+h2{display:flex;align-items:center;gap:12px;margin:0 0 10px;font-size:clamp(1.3rem,5vw,1.65rem);line-height:1.2;font-weight:900}
+h2 span{min-width:0;overflow-wrap:anywhere}
+.badge{flex:none;width:44px;height:44px;background:var(--chip) center/28px no-repeat;border:2px solid var(--edge);border-radius:14px}
+.callout .badge{border-color:var(--callout-soft)}
+p,li{text-wrap:pretty}
+p,li{overflow-wrap:break-word}
+li{margin:5px 0}
+ul{padding-left:1.3em}
+li::marker{color:var(--green)}
+a{color:var(--green-dark);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:#2c5a1d}
+strong{color:#4a3628;font-weight:800}
+.tablewrap{overflow-x:auto;margin:14px 0;border:2px solid var(--edge);border-radius:14px;background:var(--chip)}
+table{border-collapse:collapse;width:100%}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
+th{background:var(--th);font-weight:800}
+tr:last-child td{border-bottom:0}
+footer{margin-top:40px;padding-top:6px;text-align:center;color:var(--muted);font-size:.95rem}
+.isles{display:flex;justify-content:center;gap:12px;margin:0 0 10px}
+.isle{width:40px;height:40px;background:center/contain no-repeat}
+footer p{margin:0;text-wrap:balance}
+:focus-visible{outline:3px solid var(--green-dark);outline-offset:3px}
+.rows{display:none;margin:12px 0;padding:0;list-style:none}
+.rows li{margin:0 0 12px;padding:8px 16px 10px;background:var(--chip);border:2px solid var(--edge);border-bottom-width:4px;border-radius:14px}
+.rows p{margin:0;font-size:1.08rem;font-weight:800}
+.rows dl{margin:0}
+.rows dt{margin-top:6px;color:var(--muted);font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.rows dd{margin:0}
+@media (max-width:640px){
+  .card,.callout{padding-left:18px;padding-right:18px}
+  .tablewrap{display:none}
+  .rows{display:block}
+}
+@media (max-width:420px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .title-card,.card,.callout{padding-left:16px;padding-right:16px}
+}
+@media (max-width:371px){
+  .meta{grid-template-columns:1fr}
+  .meta dt{font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+  .meta dd{margin-bottom:8px}
+}
+@media (min-width:641px){
+  body{font-size:1.125rem}
+  .title-card{padding-left:28px;padding-right:28px}
+  .card,.callout{padding-left:28px;padding-right:28px}
+}
+@media (min-width:900px){
+  .c3,.c4,.c5{display:block}
+  .c1{left:6%;top:50px;width:190px;height:78px}
+  .c2{right:7%;top:130px;width:140px;height:58px}
+  .c3{left:3%;top:330px;width:170px;height:70px}
+  .c4{right:3%;top:470px;width:200px;height:82px}
+  .c5{left:9%;top:640px;width:150px;height:62px}
+}
+@media (max-height:560px){
+  .hero{width:auto;max-width:100%;max-height:40vh;margin-left:auto;margin-right:auto}
+  .title-card{margin-top:12px}
+}
+@media (prefers-contrast:more){:root{--edge:#a8854f;--btn-edge:#a8854f}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cloud{animation:none}}
+@media print{
+  body{background:#fff}
+  .sky,.jump,.hero{display:none}
+  .card,.callout,.title-card{box-shadow:none;break-inside:avoid}
+  .title-card{margin:0}
+  a[href^="http"]::after{content:" (" attr(href) ")";overflow-wrap:anywhere}
+}
+.b-isle_wilderness{background-image:url(assets/icons/isle_wilderness.png)}
+.b-isle_workshop{background-image:url(assets/icons/isle_workshop.png)}
+.b-isle_town{background-image:url(assets/icons/isle_town.png)}
+.b-isle_portal{background-image:url(assets/icons/isle_portal.png)}
+.b-blueprint{background-image:url(assets/icons/blueprint.png)}
+.b-capybara{background-image:url(assets/icons/capybara.png)}
+.b-chest{background-image:url(assets/icons/chest.png)}
+.b-clock{background-image:url(assets/icons/clock.png)}
+.b-comfort{background-image:url(assets/icons/comfort.png)}
+.b-info{background-image:url(assets/icons/info.png)}
+.b-lock{background-image:url(assets/icons/lock.png)}
+.b-parcel{background-image:url(assets/icons/parcel.png)}
+.b-supporter{background-image:url(assets/icons/supporter.png)}
+.b-watch{background-image:url(assets/icons/watch.png)}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span><span class="cloud c5"></span></div>
+<div class="wrap">
+<header>
+<img class="hero" src="assets/feature.webp" alt="Tiny Archipelago, a cozy game of floating islands: four small low-poly islands joined by rope bridges, with white clouds around them." width="1024" height="500" fetchpriority="high">
+<div class="title-card">
+<h1>Privacy Policy</h1>
+<dl class="meta">
+<div><dt>App</dt><dd>Tiny Archipelago</dd></div>
+<div><dt>Developer</dt><dd>NeonexaLabs</dd></div>
+<div><dt>Contact</dt><dd><a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></dd></div>
+<div><dt>Effective</dt><dd><time datetime="2026-10-19">19 October 2026</time></dd></div>
+</dl>
+</div>
+</header>
+<main>
+<section class="callout" id="in-short">
+<h2><span class="badge b-comfort"></span><span>In short</span></h2>
+<ul>
+<li>The game is made for children from the age of 3, and for families.</li>
+<li>The game keeps your progress and settings on your phone. There are no accounts, no sign-in and no server of ours.</li>
+<li>We do not ask for, and the game does not collect, a name, an email address, contacts, photos, a camera, a microphone, a
+  location or anything you type. There is no chat and no way to talk to other players.</li>
+<li>The game counts nothing and sends nothing about you to us: it has no analytics.</li>
+<li>You can choose to watch a short video for a bonus. The videos come from Google AdMob and are set up for children: they are
+  never personalised, and the game does not ask for the Android advertising ID.</li>
+<li>&ldquo;Sakura Diorama&rdquo; and &ldquo;Cozy Supporter&rdquo; are one-time purchases handled by Google Play. We never see your payment details.</li>
+<li>A purchase, and this privacy policy&rsquo;s web page, are behind a question for grown-ups.</li>
+</ul>
+</section>
+<nav class="jump" aria-labelledby="jump-label">
+<p id="jump-label">Jump to a section</p>
+<ul><li><a href="#what-stays-on-your-phone">What stays on your phone</a></li><li><a href="#videos-ads">Videos (ads)</a></li><li><a href="#purchases">Purchases</a></li><li><a href="#children">Children</a></li><li><a href="#where-information-goes-and-how-it-is-protected">Where it goes</a></li><li><a href="#keeping-and-deleting-information">Keeping and deleting</a></li><li><a href="#your-rights">Your rights</a></li><li><a href="#changes-to-this-policy">Changes</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav>
+<section class="card" id="what-stays-on-your-phone">
+<h2><span class="badge b-chest"></span><span>What stays on your phone</span></h2>
+<p>The game saves these in its private storage on your phone:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th scope="col">What</th>
+<th scope="col">Contains</th>
+<th scope="col">How to erase it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Save</td>
+<td>the islands, machines, goods, coins, decor and helpers you have, tutorial progress, simple counters (goods gathered, orders delivered) and how much of a Sunny spell is left</td>
+<td>Settings &gt; Start a new game (keeps your settings and purchases), or uninstall the game</td>
+</tr>
+<tr>
+<td>Purchases</td>
+<td>which of the two products you own: a list of up to two short names</td>
+<td>Uninstall the game (Google Play still knows your purchases and &ldquo;Restore purchases&rdquo; brings them back)</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td>music, sound and ambience volume, vibration, the timing assist, reduced motion, shadows, the text size and the look of the islands</td>
+<td>Uninstall the game</td>
+</tr>
+</tbody>
+</table></div>
+<ul class="rows"><li><p>Save</p><dl><dt>Contains</dt><dd>the islands, machines, goods, coins, decor and helpers you have, tutorial progress, simple counters (goods gathered, orders delivered) and how much of a Sunny spell is left</dd><dt>How to erase it</dt><dd>Settings &gt; Start a new game (keeps your settings and purchases), or uninstall the game</dd></dl></li><li><p>Purchases</p><dl><dt>Contains</dt><dd>which of the two products you own: a list of up to two short names</dd><dt>How to erase it</dt><dd>Uninstall the game (Google Play still knows your purchases and &ldquo;Restore purchases&rdquo; brings them back)</dd></dl></li><li><p>Settings</p><dl><dt>Contains</dt><dd>music, sound and ambience volume, vibration, the timing assist, reduced motion, shadows, the text size and the look of the islands</dd><dt>How to erase it</dt><dd>Uninstall the game</dd></dl></li></ul>
+<p>We cannot see these files. If Android&rsquo;s backup is turned on on your phone, Android may copy them to your Google account&rsquo;s
+backup so that your game comes back on a new phone. That is a feature of Android and Google, not of this game, and you can
+turn it off in your phone&rsquo;s settings.</p>
+</section>
+<section class="card" id="videos-ads">
+<h2><span class="badge b-watch"></span><span>Videos (ads)</span></h2>
+<p>You can choose to watch a short video, and only then, to start a Sunny spell or to double what the game gathered while you
+were away. The game never starts a video by itself, and a Cozy Supporter never needs to watch one.</p>
+<p>The videos are shown by <strong>Google AdMob</strong>. Because the game is made for children, it tells Google that every request is for
+children: ads are limited to the &ldquo;General audiences&rdquo; rating, they are not personalised, and the game&rsquo;s package does not ask
+for the Android advertising ID (its permission is removed). There is no consent form because nothing is personalised.</p>
+<p>Google&rsquo;s Mobile Ads software is a part of the game: Android starts a small piece of it whenever the game opens, as it does for
+every app that contains it. The game itself switches the software on, and asks Google for a video, only once the tutorial is done
+and ten minutes have been played with the game open; from then on that happens every time the game opens, except in a game that
+opens as a Cozy Supporter&rsquo;s, where it does not happen at all. (If you become a Cozy Supporter while the game is open, the software
+that is already running stays on until the game is closed.) Before that, the game does not ask the software to start or to fetch
+anything.</p>
+<p>To show a video and to keep it safe from fraud, Google&rsquo;s Mobile Ads software in the game collects some information from your
+phone and sends it to Google, encrypted, automatically. The list follows Google&rsquo;s own published description of that
+software:</p>
+<ul>
+<li>your IP address, which Google may use to estimate the general location of the phone;</li>
+<li>how you use the app and the video, such as app launches, taps and video views;</li>
+<li>diagnostic information, such as app launch time, hang rate and energy use;</li>
+<li>device identifiers such as the app set ID (a number that belongs to the game on your phone, not to you).</li>
+</ul>
+<p>We do not receive this information and we add nothing of our own to it. Google is responsible for what it does with it: see
+<a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google&rsquo;s Privacy Policy</a> and
+<a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses information from sites or apps that use its services</a>.</p>
+<p>If you would rather not have videos at all, you never have to watch one, and a Cozy Supporter gets the bonuses without them.</p>
+</section>
+<section class="card" id="purchases">
+<h2><span class="badge b-supporter"></span><span>Purchases</span></h2>
+<p>&ldquo;Sakura Diorama&rdquo; and &ldquo;Cozy Supporter&rdquo; are bought through Google Play, by a grown-up. Google takes the payment and shows its own
+purchase screen; we never see your card or payment details. Google tells the game whether the purchase was paid, and the game
+keeps a short list of which products you own, on your phone. We do not keep purchase tokens, order numbers or your Google
+account details. &ldquo;Restore purchases&rdquo; asks Google Play which purchases belong to the Google account on your phone, and the game
+asks it the same, and for the prices, whenever it opens, so that a purchase made on another phone, or one that was still waiting
+for payment, is not lost. The coins in
+the game are only a game currency: they cannot be bought and they are not money.</p>
+</section>
+<section class="card" id="children">
+<h2><span class="badge b-capybara"></span><span>Children</span></h2>
+<p>The game is made for children from the age of 3. We designed it to follow the rules for apps for children, including the
+Children&rsquo;s Online Privacy Protection Act (COPPA) and Google Play&rsquo;s Families policy: it has no accounts, no chat, no
+location, no analytics and no personalised ads, it asks for no personal information, and the two things that leave the game
+(a purchase and this page) are behind a question for grown-ups. We do not knowingly collect personal information from
+children. If you are a parent or guardian and think a child has sent us personal information, <a href="mailto:neonexalabs@gmail.com">write to us</a> at the address above
+and we will answer and, where we can, act on it.</p>
+<p>The videos and purchases involve Google, which has its own policies for children&rsquo;s accounts; Google Play&rsquo;s settings (and
+Family Link) let a parent decide what a child may buy or install.</p>
+</section>
+<section class="card" id="where-information-goes-and-how-it-is-protected">
+<h2><span class="badge b-lock"></span><span>Where information goes and how it is protected</span></h2>
+<p>Information collected by Google&rsquo;s software (the videos) goes to Google, which may process it in any country where it operates.
+It is sent encrypted (TLS). The game&rsquo;s own files stay in the game&rsquo;s private storage on your phone, which other apps cannot read
+on a normal, unmodified phone. No way of storing or sending information is completely secure, so we cannot promise absolute
+security.</p>
+</section>
+<section class="card" id="keeping-and-deleting-information">
+<h2><span class="badge b-clock"></span><span>Keeping and deleting information</span></h2>
+<ul>
+<li><strong>On your phone:</strong> until you use Start a new game (progress only), clear the app&rsquo;s storage or uninstall the game.</li>
+<li><strong>In your Google account&rsquo;s backup:</strong> until you delete the backup or turn it off in your phone&rsquo;s settings.</li>
+<li><strong>Information collected by Google&rsquo;s software for the videos:</strong> Google holds it under its own policies and retention periods.
+  We keep no copy, so we cannot delete it for you.</li>
+<li><strong>Emails to us:</strong> kept as long as needed to answer you and deal with the matter, then deleted.</li>
+</ul>
+</section>
+<section class="card" id="your-rights">
+<h2><span class="badge b-info"></span><span>Your rights</span></h2>
+<p>Depending on where you live (for example the EEA, the UK, Switzerland, California and other US states), you or your child may
+have rights over personal information: to see it, correct it, delete it, limit or object to its use, take a copy and complain
+to your data protection authority. The game gives us no name or contact detail and sends nothing to us, so there is nothing for
+us to look up or delete. For the information Google&rsquo;s software collects, Google holds it and its tools (<a href="#videos-ads">the links above</a>) are
+how to use these rights. If you are not sure where to start, <a href="mailto:neonexalabs@gmail.com">write to us</a> and we will help you find the right place.</p>
+</section>
+<section class="card" id="changes-to-this-policy">
+<h2><span class="badge b-blueprint"></span><span>Changes to this policy</span></h2>
+<p>We may update this policy, for example when we add a feature. The effective date above changes when we do, and a change that
+collects more information is published before the update that needs it is released.</p>
+</section>
+<section class="card" id="contact">
+<h2><span class="badge b-parcel"></span><span>Contact</span></h2>
+<p>NeonexaLabs<br>
+<a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></p>
+</section>
+</main>
+<footer>
+<div class="isles" aria-hidden="true"><span class="isle b-isle_wilderness"></span><span class="isle b-isle_workshop"></span><span class="isle b-isle_town"></span><span class="isle b-isle_portal"></span></div>
+<p>Tiny Archipelago &middot; NeonexaLabs &middot; Effective <time datetime="2026-10-19">19 October 2026</time></p>
+</footer>
+</div>
+</body>
+</html>
