@@ -10,6 +10,10 @@
 <link rel="icon" href="assets/favicon.png" sizes="64x64">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="canonical" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
+<link rel="alternate" hreflang="en" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
+<link rel="alternate" hreflang="es" href="https://neonexalabs.github.io/tiny-archipelago-privacy/es.html">
+<link rel="alternate" hreflang="de" href="https://neonexalabs.github.io/tiny-archipelago-privacy/de.html">
+<link rel="alternate" hreflang="x-default" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
 <link rel="preload" href="assets/fonts/Nunito.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:Nunito;src:url(assets/fonts/Nunito.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
@@ -120,6 +124,18 @@ footer p{margin:0;text-wrap:balance}
   .title-card{margin:0}
   a[href^="http"]::after{content:" (" attr(href) ")";overflow-wrap:anywhere}
 }
+
+.langs{margin:0 0 14px}
+.langs a[aria-current]{padding:8px 15px 6px;background:var(--callout);border-color:var(--callout-edge);border-bottom-width:2px}
+.langs a[aria-current]::before{content:"";flex:none;width:.4em;height:.8em;margin:-.2em .65em 0 .2em;border:solid currentColor;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.notice{margin:14px 0 0;padding:10px 14px;background:var(--btn);border:2px solid var(--btn-edge);border-left:8px solid var(--gold-dark);border-radius:14px}
+h1{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:560px){
+  html:not([lang=en]) .meta{grid-template-columns:1fr}
+  html:not([lang=en]) .meta dt{font-size:.875rem;font-weight:800;letter-spacing:0;text-transform:none}
+  html:not([lang=en]) .meta dd{margin-bottom:8px}
+}
+@media print{.langs{display:none}}
 .b-isle_wilderness{background-image:url(assets/icons/isle_wilderness.png)}
 .b-isle_workshop{background-image:url(assets/icons/isle_workshop.png)}
 .b-isle_town{background-image:url(assets/icons/isle_town.png)}
@@ -144,6 +160,7 @@ footer p{margin:0;text-wrap:balance}
 <div class="sky" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span><span class="cloud c5"></span></div>
 <div class="wrap">
 <header>
+<nav class="langs" aria-label="Language"><ul><li><a href="index.html" lang="en" aria-current="page">English</a></li><li><a href="es.html" lang="es">Español</a></li><li><a href="de.html" lang="de">Deutsch</a></li></ul></nav>
 <img class="hero" src="assets/feature.webp" alt="Tiny Archipelago, a cozy game of floating islands: four small low-poly islands joined by rope bridges, with white clouds around them." width="1024" height="500" fetchpriority="high">
 <div class="title-card">
 <h1>Privacy Policy</h1>
@@ -151,7 +168,7 @@ footer p{margin:0;text-wrap:balance}
 <div><dt>App</dt><dd>Tiny Archipelago</dd></div>
 <div><dt>Developer</dt><dd>NeonexaLabs</dd></div>
 <div><dt>Contact</dt><dd><a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></dd></div>
-<div><dt>Effective</dt><dd><time datetime="2026-10-21">21 October 2026</time></dd></div>
+<div><dt>Effective</dt><dd><time datetime="2026-10-22">22 October 2026</time></dd></div>
 </dl>
 </div>
 </header>
@@ -217,12 +234,12 @@ footer p{margin:0;text-wrap:balance}
 </tr>
 <tr>
 <td>Settings</td>
-<td>music, sound and ambience volume, vibration, the timing assist, reduced motion, shadows, the text size, the look of the islands, and whether the copy in your Google account, the play statistics and the lanterns everyone lights together are on</td>
+<td>music, sound and ambience volume, vibration, the timing assist, reduced motion, shadows, the text size, the language, the look of the islands, and whether the copy in your Google account, the play statistics and the lanterns everyone lights together are on</td>
 <td>Uninstall the game</td>
 </tr>
 </tbody>
 </table></div>
-<ul class="rows"><li><p>Save</p><dl><dt>Contains</dt><dd>the islands, machines, goods, coins, decor and helpers you have, tutorial progress, simple counters (goods gathered, orders delivered), how much of a Sunny spell is left, which festival lanterns are lit (and, if you have turned on the lanterns everyone lights together, how many orders the game has delivered but not yet told our counter, and the last total it read back), the day&rsquo;s order and the date it was last made or delivered, when the game was last saved (so that it can work out your welcome-back bonus), and, if you save to Google Play Games, a random game number and a counter that say which copy in your account is this game&rsquo;s</dd><dt>How to erase it</dt><dd>Settings &gt; Start a new game (keeps your settings and purchases), or uninstall the game</dd></dl></li><li><p>Spare copy</p><dl><dt>Contains</dt><dd>the game that did not win a choice between the phone and your Google account, or the one a new game replaced while the copy in your account was on: the same things as a save</dd><dt>How to erase it</dt><dd>Settings &gt; Delete it, or uninstall the game</dd></dl></li><li><p>Birth-year note</p><dl><dt>Contains</dt><dd>only whether your answer to the birth-year question means 13 and over or not, and when you gave it: never the year</dd><dt>How to erase it</dt><dd>uninstall the game</dd></dl></li><li><p>Purchases</p><dl><dt>Contains</dt><dd>which products you own: a short name for each</dd><dt>How to erase it</dt><dd>Uninstall the game (Google Play still knows your purchases and &ldquo;Restore purchases&rdquo; brings them back)</dd></dl></li><li><p>Settings</p><dl><dt>Contains</dt><dd>music, sound and ambience volume, vibration, the timing assist, reduced motion, shadows, the text size, the look of the islands, and whether the copy in your Google account, the play statistics and the lanterns everyone lights together are on</dd><dt>How to erase it</dt><dd>Uninstall the game</dd></dl></li></ul>
+<ul class="rows"><li><p>Save</p><dl><dt>Contains</dt><dd>the islands, machines, goods, coins, decor and helpers you have, tutorial progress, simple counters (goods gathered, orders delivered), how much of a Sunny spell is left, which festival lanterns are lit (and, if you have turned on the lanterns everyone lights together, how many orders the game has delivered but not yet told our counter, and the last total it read back), the day&rsquo;s order and the date it was last made or delivered, when the game was last saved (so that it can work out your welcome-back bonus), and, if you save to Google Play Games, a random game number and a counter that say which copy in your account is this game&rsquo;s</dd><dt>How to erase it</dt><dd>Settings &gt; Start a new game (keeps your settings and purchases), or uninstall the game</dd></dl></li><li><p>Spare copy</p><dl><dt>Contains</dt><dd>the game that did not win a choice between the phone and your Google account, or the one a new game replaced while the copy in your account was on: the same things as a save</dd><dt>How to erase it</dt><dd>Settings &gt; Delete it, or uninstall the game</dd></dl></li><li><p>Birth-year note</p><dl><dt>Contains</dt><dd>only whether your answer to the birth-year question means 13 and over or not, and when you gave it: never the year</dd><dt>How to erase it</dt><dd>uninstall the game</dd></dl></li><li><p>Purchases</p><dl><dt>Contains</dt><dd>which products you own: a short name for each</dd><dt>How to erase it</dt><dd>Uninstall the game (Google Play still knows your purchases and &ldquo;Restore purchases&rdquo; brings them back)</dd></dl></li><li><p>Settings</p><dl><dt>Contains</dt><dd>music, sound and ambience volume, vibration, the timing assist, reduced motion, shadows, the text size, the language, the look of the islands, and whether the copy in your Google account, the play statistics and the lanterns everyone lights together are on</dd><dt>How to erase it</dt><dd>Uninstall the game</dd></dl></li></ul>
 <p>We cannot see these files. If Android&rsquo;s backup is turned on on your phone, Android may copy them to your Google account&rsquo;s
 backup so that your game comes back on a new phone. That is a feature of Android and Google, not of this game, and you can
 turn it off in your phone&rsquo;s settings.</p>
@@ -408,7 +425,7 @@ collects more information is published before the update that needs it is releas
 </main>
 <footer>
 <div class="isles" aria-hidden="true"><span class="isle b-isle_wilderness"></span><span class="isle b-isle_workshop"></span><span class="isle b-isle_town"></span><span class="isle b-isle_portal"></span></div>
-<p>Tiny Archipelago &middot; NeonexaLabs &middot; Effective <time datetime="2026-10-21">21 October 2026</time></p>
+<p>Tiny Archipelago &middot; NeonexaLabs &middot; Effective <time datetime="2026-10-22">22 October 2026</time></p>
 </footer>
 </div>
 </body>
