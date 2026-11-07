@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad - Tiny Archipelago</title>
+<meta name="description" content="La política de privacidad de Tiny Archipelago, un acogedor juego de islas en estilo low poly para niños y familias, de NeonexaLabs.">
+<meta name="theme-color" content="#8fcdf3">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="assets/favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://neonexalabs.github.io/tiny-archipelago-privacy/es.html">
+<link rel="alternate" hreflang="en" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
+<link rel="alternate" hreflang="es" href="https://neonexalabs.github.io/tiny-archipelago-privacy/es.html">
+<link rel="alternate" hreflang="de" href="https://neonexalabs.github.io/tiny-archipelago-privacy/de.html">
+<link rel="alternate" hreflang="x-default" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
+<link rel="preload" href="assets/fonts/Nunito.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Nunito;src:url(assets/fonts/Nunito.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
+:root{--sky:#8fcdf3;--sky-light:#e4f4fd;--panel:#fff8ec;--edge:#ead6b8;--text:#5b4636;--muted:#7a6652;--green:#7cc25b;--green-dark:#3f7a2b;
+  --gold:#f2c35b;--gold-dark:#c9962e;--chip:#fffdf7;--btn:#fff1d6;--btn-edge:#e3c9a0;--callout:#e3f2d3;--callout-edge:#5a9a40;--callout-soft:#b9dda3;--th:#f6e7cc}
+*{box-sizing:border-box}
+html{color-scheme:only light;scroll-behavior:smooth;scroll-padding-top:16px}
+body{position:relative;margin:0;color:var(--text);background:var(--sky-light) linear-gradient(var(--sky),#c6e7f9 440px,var(--sky-light) 900px) no-repeat;
+  font:600 1rem/1.62 Nunito,"Trebuchet MS","Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.sky{position:absolute;top:0;left:0;right:0;height:720px;overflow:hidden;pointer-events:none}
+.cloud{position:absolute;background:linear-gradient(168deg,#fff 50%,#eef4fb 50% 72%,#dce8f4 72%);animation:float-in 5s ease-out both;
+  clip-path:polygon(4% 96%,0 70%,10% 50%,26% 48%,34% 22%,52% 6%,70% 20%,78% 40%,92% 44%,100% 70%,96% 94%,72% 100%,48% 92%,22% 100%)}
+.c3,.c5{clip-path:polygon(3% 100%,0 72%,12% 56%,30% 54%,42% 30%,58% 22%,72% 40%,90% 38%,100% 62%,97% 100%,70% 92%,38% 100%)}
+.c2,.c4{scale:-1 1}
+.c1{left:3%;top:12px;width:150px;height:62px}
+.c2{right:4%;top:30px;width:110px;height:46px}
+.c3,.c4,.c5{display:none}
+@keyframes float-in{from{transform:translateX(-30px)}}
+.wrap{position:relative;max-width:720px;margin:0 auto;padding:52px 16px 56px}
+.hero{display:block;width:100%;height:auto;border:4px solid var(--panel);border-radius:22px;background:#cfe9fb;box-shadow:0 10px 26px rgba(84,56,30,.24)}
+.title-card{position:relative;margin:-14px 10px 0;padding:16px 20px 18px}
+h1{margin:0 0 8px;font-size:clamp(1.9rem,7vw,2.6rem);line-height:1.1;font-weight:900}
+.meta{display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;align-items:baseline;margin:0}
+.meta div{display:contents}
+.meta dt{color:var(--muted);font-weight:700}
+.meta dd{margin:0;min-width:0;font-weight:700;overflow-wrap:anywhere}
+.mail{position:relative}
+.mail::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-10px}
+.callout{margin:24px 0 0}
+.jump{margin:22px 0 6px}
+.jump p{margin:0 0 8px;color:var(--muted);font-size:.9rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+nav ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+nav li{margin:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:6px 15px;color:var(--text);font-size:.95rem;font-weight:800;line-height:1.3;
+  text-decoration:none;background:var(--btn);border:2px solid var(--btn-edge);border-bottom-width:4px;border-radius:14px}
+nav a:hover{background:var(--callout);border-color:var(--callout-edge);color:var(--text)}
+nav a:active{background:#f1dfc0;padding:8px 15px 6px;border-bottom-width:2px}
+.title-card,.card,.callout{background:var(--panel);border:2px solid var(--edge);border-radius:18px;box-shadow:0 4px 12px rgba(84,56,31,.18)}
+.card,.callout{padding:18px 22px 20px}
+.card>:last-child,.callout>:last-child{margin-bottom:0}
+.card{margin:16px 0}
+.callout{background:var(--callout);border-color:var(--callout-edge)}
+h2{display:flex;align-items:center;gap:12px;margin:0 0 10px;font-size:clamp(1.3rem,5vw,1.65rem);line-height:1.2;font-weight:900}
+h2 span{min-width:0;overflow-wrap:anywhere}
+.badge{flex:none;width:44px;height:44px;background:var(--chip) center/28px no-repeat;border:2px solid var(--edge);border-radius:14px}
+.callout .badge{border-color:var(--callout-soft)}
+p,li{text-wrap:pretty}
+p,li{overflow-wrap:break-word}
+li{margin:5px 0}
+ul{padding-left:1.3em}
+li::marker{color:var(--green)}
+a{color:var(--green-dark);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:#2c5a1d}
+strong{color:#4a3628;font-weight:800}
+.tablewrap{overflow-x:auto;margin:14px 0;border:2px solid var(--edge);border-radius:14px;background:var(--chip)}
+table{border-collapse:collapse;width:100%}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
+th{background:var(--th);font-weight:800}
+tr:last-child td{border-bottom:0}
+footer{margin-top:40px;padding-top:6px;text-align:center;color:var(--muted);font-size:.95rem}
+.isles{display:flex;justify-content:center;gap:12px;margin:0 0 10px}
+.isle{width:40px;height:40px;background:center/contain no-repeat}
+footer p{margin:0;text-wrap:balance}
+:focus-visible{outline:3px solid var(--green-dark);outline-offset:3px}
+.rows{display:none;margin:12px 0;padding:0;list-style:none}
+.rows li{margin:0 0 12px;padding:8px 16px 10px;background:var(--chip);border:2px solid var(--edge);border-bottom-width:4px;border-radius:14px}
+.rows p{margin:0;font-size:1.08rem;font-weight:800}
+.rows dl{margin:0}
+.rows dt{margin-top:6px;color:var(--muted);font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.rows dd{margin:0}
+@media (max-width:640px){
+  .card,.callout{padding-left:18px;padding-right:18px}
+  .tablewrap{display:none}
+  .rows{display:block}
+}
+@media (max-width:420px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .title-card,.card,.callout{padding-left:16px;padding-right:16px}
+}
+@media (max-width:371px){
+  .meta{grid-template-columns:1fr}
+  .meta dt{font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+  .meta dd{margin-bottom:8px}
+}
+@media (min-width:641px){
+  body{font-size:1.125rem}
+  .title-card{padding-left:28px;padding-right:28px}
+  .card,.callout{padding-left:28px;padding-right:28px}
+}
+@media (min-width:900px){
+  .c3,.c4,.c5{display:block}
+  .c1{left:6%;top:50px;width:190px;height:78px}
+  .c2{right:7%;top:130px;width:140px;height:58px}
+  .c3{left:3%;top:330px;width:170px;height:70px}
+  .c4{right:3%;top:470px;width:200px;height:82px}
+  .c5{left:9%;top:640px;width:150px;height:62px}
+}
+@media (max-height:560px){
+  .hero{width:auto;max-width:100%;max-height:40vh;margin-left:auto;margin-right:auto}
+  .title-card{margin-top:12px}
+}
+@media (prefers-contrast:more){:root{--edge:#a8854f;--btn-edge:#a8854f}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cloud{animation:none}}
+@media print{
+  body{background:#fff}
+  .sky,.jump,.hero{display:none}
+  .card,.callout,.title-card{box-shadow:none;break-inside:avoid}
+  .title-card{margin:0}
+  a[href^="http"]::after{content:" (" attr(href) ")";overflow-wrap:anywhere}
+}
+
+.langs{margin:0 0 14px}
+.langs a[aria-current]{padding:8px 15px 6px;background:var(--callout);border-color:var(--callout-edge);border-bottom-width:2px}
+.langs a[aria-current]::before{content:"";flex:none;width:.4em;height:.8em;margin:-.2em .65em 0 .2em;border:solid currentColor;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.notice{margin:14px 0 0;padding:10px 14px;background:var(--btn);border:2px solid var(--btn-edge);border-left:8px solid var(--gold-dark);border-radius:14px}
+h1{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:560px){
+  html:not([lang=en]) .meta{grid-template-columns:1fr}
+  html:not([lang=en]) .meta dt{font-size:.875rem;font-weight:800;letter-spacing:0;text-transform:none}
+  html:not([lang=en]) .meta dd{margin-bottom:8px}
+}
+@media print{.langs{display:none}}
+.b-isle_wilderness{background-image:url(assets/icons/isle_wilderness.png)}
+.b-isle_workshop{background-image:url(assets/icons/isle_workshop.png)}
+.b-isle_town{background-image:url(assets/icons/isle_town.png)}
+.b-isle_portal{background-image:url(assets/icons/isle_portal.png)}
+.b-blueprint{background-image:url(assets/icons/blueprint.png)}
+.b-capybara{background-image:url(assets/icons/capybara.png)}
+.b-chart{background-image:url(assets/icons/chart.png)}
+.b-chest{background-image:url(assets/icons/chest.png)}
+.b-clock{background-image:url(assets/icons/clock.png)}
+.b-cloud{background-image:url(assets/icons/cloud.png)}
+.b-comfort{background-image:url(assets/icons/comfort.png)}
+.b-festival{background-image:url(assets/icons/festival.png)}
+.b-info{background-image:url(assets/icons/info.png)}
+.b-lock{background-image:url(assets/icons/lock.png)}
+.b-parcel{background-image:url(assets/icons/parcel.png)}
+.b-phone{background-image:url(assets/icons/phone.png)}
+.b-supporter{background-image:url(assets/icons/supporter.png)}
+.b-watch{background-image:url(assets/icons/watch.png)}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span><span class="cloud c5"></span></div>
+<div class="wrap">
+<header>
+<nav class="langs" aria-label="Idioma"><ul><li><a href="index.html" lang="en">English</a></li><li><a href="es.html" lang="es" aria-current="page">Español</a></li><li><a href="de.html" lang="de">Deutsch</a></li></ul></nav>
+<img class="hero" src="assets/feature.webp" alt="Tiny Archipelago, un acogedor juego de islas flotantes: cuatro islas pequeñas de caras planas unidas por puentes de cuerda, con nubes blancas alrededor." width="1024" height="500" fetchpriority="high">
+<div class="title-card">
+<h1>Política de privacidad</h1>
+<dl class="meta">
+<div><dt>Aplicación</dt><dd>Tiny Archipelago</dd></div>
+<div><dt>Desarrollador</dt><dd>NeonexaLabs</dd></div>
+<div><dt>Contacto</dt><dd><a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></dd></div>
+<div><dt>Fecha de entrada en vigor</dt><dd><time datetime="2026-10-22">22 de octubre de 2026</time></dd></div>
+</dl>
+<p class="notice">Esta página es una traducción. Si esta y la página en inglés difieren, se aplica la página en inglés.</p>
+</div>
+</header>
+<main>
+<section class="callout" id="in-short">
+<h2><span class="badge b-comfort"></span><span>En resumen</span></h2>
+<ul>
+<li>El juego está hecho para todas las personas a partir de los 3 años, niños y familias incluidos. Una sola vez, pregunta en qué año nació usted.</li>
+<li>El juego guarda su progreso y su configuración en su teléfono. No tiene una cuenta propia. Nuestro único servidor es un contador de faroles (más abajo), con el que el juego solo se comunica si un adulto activa esa opción.</li>
+<li>No pedimos, y el juego no recopila, nombre, dirección de correo electrónico, contactos, fotos, cámara, micrófono, ubicación ni nada de lo que usted escriba. No hay chat ni forma de hablar con otros jugadores.</li>
+<li>El juego también consulta la fecha de su teléfono, para abrir un festival en la época del año que le corresponde y para poner un pedido nuevo en el tablero cada día que usted juega. Usa solo la fecha de su teléfono: el juego no nos la envía, y las estadísticas de juego no la incluyen. (La partida guardada recuerda el día en que se hizo por última vez el pedido del día; la copia en su cuenta de Google, si usted la activa, contiene la partida guardada, así que Google también conserva ese día.)</li>
+<li>Las estadísticas de juego están desactivadas. Un adulto puede activarlas en Configuración: solo cuentan momentos del juego (sin nombres, sin nada escrito) y un toque las desactiva otra vez.</li>
+<li>Los faroles que jugadores de todas partes encienden juntos están desactivados. Un adulto puede activarlos en Configuración: entonces el juego envía a nuestro contador cuántos pedidos y contratos entregó usted (un número) y la versión del juego, y recibe el total. Cada solicitud lleva además la dirección de internet de su teléfono, como toda solicitud web; lo que el contador hace con ella, y lo que conserva quien lo aloja, se explica más abajo. No podemos saber quién envió qué, y un toque lo desactiva otra vez.</li>
+<li>Un jugador que dice tener 13 años o más puede elegir guardar su partida en su propia cuenta de Google con Google Play Juegos (Google Play Games). Es opcional y está desactivado hasta que se activa, y nunca se ofrece a nadie más ni se inicia para nadie más.</li>
+<li>Usted puede elegir ver un video corto para obtener un bono. Los videos vienen de Google AdMob y están configurados para niños: nunca se personalizan, y el juego no pide el ID de publicidad de Android. Eso es igual para todos los jugadores.</li>
+<li>“Diorama Sakura”, “Jardín de neón”, “Campo de calabazas” y “Apoyo acogedor” son compras únicas gestionadas por Google Play. Nunca vemos sus datos de pago.</li>
+<li>Una compra, activar las estadísticas de juego, los faroles que todos encienden juntos o la copia en su cuenta de Google, borrar esa copia y la página web de esta política de privacidad están detrás de una pregunta para un adulto.</li>
+</ul>
+</section>
+<nav class="jump" aria-labelledby="jump-label">
+<p id="jump-label">Ir a una sección</p>
+<ul><li><a href="#what-stays-on-your-phone">Lo que se queda en su teléfono</a></li><li><a href="#your-birth-year">Su año de nacimiento</a></li><li><a href="#play-statistics-optional-off-unless-a-grown-up-turns-them-on">Estadísticas de juego</a></li><li><a href="#lanterns-everyone-lights-together-optional-off-unless-a-grown-up-turns-it-on">Faroles juntos</a></li><li><a href="#saving-your-game-with-google-play-games-optional-for-players-13-and-over">Guardar su partida</a></li><li><a href="#videos-ads">Videos (anuncios)</a></li><li><a href="#purchases">Compras</a></li><li><a href="#children">Niños</a></li><li><a href="#where-information-goes-and-how-it-is-protected">Adónde va</a></li><li><a href="#keeping-and-deleting-information">Conservar y borrar</a></li><li><a href="#your-rights">Sus derechos</a></li><li><a href="#changes-to-this-policy">Cambios</a></li><li><a href="#contact">Contacto</a></li></ul>
+</nav>
+<section class="card" id="what-stays-on-your-phone">
+<h2><span class="badge b-chest"></span><span>Lo que se queda en su teléfono</span></h2>
+<p>El juego guarda lo siguiente en el almacenamiento privado del juego, en su teléfono:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th scope="col">Qué</th>
+<th scope="col">Contiene</th>
+<th scope="col">Cómo borrarlo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Partida guardada</td>
+<td>las islas, máquinas, productos, monedas, decoración y ayudantes que usted tiene, el progreso del tutorial, contadores sencillos (productos recogidos, pedidos entregados), cuánto queda de un hechizo soleado, qué faroles de festival están encendidos (y, si usted ha activado los faroles que todos encienden juntos, cuántos pedidos ha entregado el juego que todavía no ha comunicado a nuestro contador, y el último total que recibió), el pedido del día y la fecha en que se hizo o se entregó por última vez, cuándo se guardó el juego por última vez (para poder calcular su bono de bienvenida al volver) y, si usted guarda en Google Play Juegos, un número de partida aleatorio y un contador que indican qué copia en su cuenta es la de este juego</td>
+<td>Configuración &gt; Empezar una partida nueva (conserva su configuración y sus compras), o desinstalar el juego</td>
+</tr>
+<tr>
+<td>Copia de reserva</td>
+<td>la partida que no se eligió cuando había que elegir entre el teléfono y su cuenta de Google, o la que una partida nueva reemplazó mientras la copia en su cuenta estaba activada: las mismas cosas que una partida guardada</td>
+<td>Configuración &gt; Borrar esta copia, o desinstalar el juego</td>
+</tr>
+<tr>
+<td>Nota del año de nacimiento</td>
+<td>solo si su respuesta a la pregunta del año de nacimiento significa 13 años o más, o no, y cuándo la dio: nunca el año</td>
+<td>Desinstalar el juego</td>
+</tr>
+<tr>
+<td>Compras</td>
+<td>qué productos tiene: un nombre corto para cada uno</td>
+<td>Desinstalar el juego (Google Play sigue conociendo sus compras y “Restaurar compras” las recupera)</td>
+</tr>
+<tr>
+<td>Configuración</td>
+<td>el volumen de la música, los sonidos y el ambiente, la vibración, la ayuda de precisión, reducir movimiento, las sombras, el tamaño del texto, el idioma, el tema de las islas, y si están activadas la copia en su cuenta de Google, las estadísticas de juego y los faroles que todos encienden juntos</td>
+<td>Desinstalar el juego</td>
+</tr>
+</tbody>
+</table></div>
+<ul class="rows"><li><p>Partida guardada</p><dl><dt>Contiene</dt><dd>las islas, máquinas, productos, monedas, decoración y ayudantes que usted tiene, el progreso del tutorial, contadores sencillos (productos recogidos, pedidos entregados), cuánto queda de un hechizo soleado, qué faroles de festival están encendidos (y, si usted ha activado los faroles que todos encienden juntos, cuántos pedidos ha entregado el juego que todavía no ha comunicado a nuestro contador, y el último total que recibió), el pedido del día y la fecha en que se hizo o se entregó por última vez, cuándo se guardó el juego por última vez (para poder calcular su bono de bienvenida al volver) y, si usted guarda en Google Play Juegos, un número de partida aleatorio y un contador que indican qué copia en su cuenta es la de este juego</dd><dt>Cómo borrarlo</dt><dd>Configuración &gt; Empezar una partida nueva (conserva su configuración y sus compras), o desinstalar el juego</dd></dl></li><li><p>Copia de reserva</p><dl><dt>Contiene</dt><dd>la partida que no se eligió cuando había que elegir entre el teléfono y su cuenta de Google, o la que una partida nueva reemplazó mientras la copia en su cuenta estaba activada: las mismas cosas que una partida guardada</dd><dt>Cómo borrarlo</dt><dd>Configuración &gt; Borrar esta copia, o desinstalar el juego</dd></dl></li><li><p>Nota del año de nacimiento</p><dl><dt>Contiene</dt><dd>solo si su respuesta a la pregunta del año de nacimiento significa 13 años o más, o no, y cuándo la dio: nunca el año</dd><dt>Cómo borrarlo</dt><dd>Desinstalar el juego</dd></dl></li><li><p>Compras</p><dl><dt>Contiene</dt><dd>qué productos tiene: un nombre corto para cada uno</dd><dt>Cómo borrarlo</dt><dd>Desinstalar el juego (Google Play sigue conociendo sus compras y “Restaurar compras” las recupera)</dd></dl></li><li><p>Configuración</p><dl><dt>Contiene</dt><dd>el volumen de la música, los sonidos y el ambiente, la vibración, la ayuda de precisión, reducir movimiento, las sombras, el tamaño del texto, el idioma, el tema de las islas, y si están activadas la copia en su cuenta de Google, las estadísticas de juego y los faroles que todos encienden juntos</dd><dt>Cómo borrarlo</dt><dd>Desinstalar el juego</dd></dl></li></ul>
+<p>No podemos ver estos archivos. Si la copia de seguridad de Android está activada en su teléfono, Android puede copiarlos en la copia de seguridad de su cuenta de Google para que su partida se recupere en un teléfono nuevo. Esa es una función de Android y de Google, no de este juego, y usted puede desactivarla en la configuración de su teléfono.</p>
+<p>El juego también consulta la fecha de su teléfono, para abrir un festival en la época del año que le corresponde y para hacer el pedido del día: un pedido nuevo en el tablero por cada día que usted juega (la fecha decide qué productos pide). Usa solo la fecha de su teléfono: el juego no nos la envía, y las estadísticas de juego no la incluyen. La partida guardada recuerda la fecha en que el pedido del día se hizo o se entregó por última vez, para que el siguiente se haga en un día posterior; la copia en su cuenta de Google, si usted la activa, contiene la partida guardada y por eso contiene también esa fecha, y lo mismo ocurre con la copia de seguridad propia de Android si está activada. La copia en su cuenta de Google y las estadísticas de juego anotan cada una cuándo se hicieron, como se describe más abajo.</p>
+</section>
+<section class="card" id="your-birth-year">
+<h2><span class="badge b-phone"></span><span>Su año de nacimiento</span></h2>
+<p>La primera vez que usted juega, el juego pregunta “¿En qué año nació usted?”. Puede escribir un año u omitir la pregunta. El juego guarda solo si su respuesta significa “13 años o más” o no (no el año en sí), en su teléfono, y no la envía a ninguna parte, ni siquiera en las estadísticas de juego. Omitir la pregunta, o escribir un año que el juego no considera creíble, cuenta como niño. La respuesta decide si se ofrece la copia en su cuenta de Google (más abajo) y, por ahora, si se ofrecen las estadísticas de juego. No cambia nada más: los videos, las compras y el juego son iguales para cualquier respuesta. Un adulto puede responder otra vez en Configuración &gt; Acerca de, detrás de la pregunta para un adulto.</p>
+</section>
+<section class="card" id="play-statistics-optional-off-unless-a-grown-up-turns-them-on">
+<h2><span class="badge b-chart"></span><span>Estadísticas de juego (opcionales, desactivadas salvo que un adulto las active)</span></h2>
+<p>En Configuración, un adulto puede activar “Compartir estadísticas de juego”, después de la pregunta para un adulto y de una tarjeta breve que dice qué se cuenta. Por ahora, el interruptor se ofrece solo a los jugadores que dijeron tener 13 años o más. Mientras está desactivado, el juego no inicia el software que cuenta y no cuenta nada; un toque lo desactiva otra vez y lo detiene de inmediato.</p>
+<p>Mientras está activado, el juego cuenta momentos del juego y envía los conteos a <strong>Google Analytics para Firebase</strong> (Google). Un conteo es un tipo de momento y unos pocos números de los datos propios del juego, por ejemplo “se entregó un pedido”, “se alcanzó un hito”, “se abrió un festival”, “se encendió un farol”, cuánto duró una sesión, cuál de los nueve paneles se abrió, si se pidió un bono de video y cómo terminó. No contiene ningún nombre, nada de lo que usted escribió, ninguna edad ni ningún año de nacimiento, y nunca se refiere a una compra ni a la copia en su cuenta de Google.</p>
+<p>El software de Google también recopila por sí mismo cierta información, de forma automática, y la envía a Google, cifrada:</p>
+<ul>
+<li>su dirección IP, a partir de la cual Google determina el país (y puede estimar la ubicación general del teléfono);</li>
+<li>cuándo se abre el juego y por cuánto tiempo, y cuándo se actualiza;</li>
+<li>el modelo de su teléfono, su versión de Android, la versión del juego y el idioma;</li>
+<li>un número aleatorio que pertenece al juego en su teléfono, no a usted (el ID de instancia de la aplicación);</li>
+<li>qué enlace o página de Google Play trajo la instalación, cuando Google Play lo indica (la referencia de instalación);</li>
+<li>como el software de compras y videos forma parte del juego, Google Analytics también puede contar por sí mismo una compra (con el producto y su precio) o los eventos de un video.</li>
+</ul>
+<p>El juego desactiva el ID de publicidad, la personalización de anuncios y todos los consentimientos de publicidad, y en Google Analytics están desactivadas las señales de Google y todas las opciones de uso compartido de datos; los conteos no están vinculados con Google Ads, AdMob ni Google Play. Google conserva los conteos durante dos meses y es responsable de lo que hace con ellos: consulte la <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Política de Privacidad de Google</a> y <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">Cómo usa Google la información de sitios o aplicaciones que usan sus servicios</a>. Nosotros recibimos los conteos, no quién los envió, y no podemos saber de qué teléfono o persona vino un conteo, así que no hay nada que podamos buscar ni borrar para un solo jugador; al desactivar el interruptor, ya no se cuenta nada más.</p>
+</section>
+<section class="card" id="lanterns-everyone-lights-together-optional-off-unless-a-grown-up-turns-it-on">
+<h2><span class="badge b-festival"></span><span>Faroles que todos encienden juntos (opcionales, desactivados salvo que un adulto los active)</span></h2>
+<p>En Configuración, un adulto puede activar “Encender faroles con todos”, después de la pregunta para un adulto y de una tarjeta breve que dice qué se envía. Se ofrece a todos los jugadores, cualquiera que haya sido la respuesta a la pregunta del año de nacimiento. Mientras está desactivado, el juego no hace ninguna solicitud a nuestro contador; un toque lo desactiva otra vez y lo detiene de inmediato.</p>
+<p>Mientras está activado, el juego suma uno a un número guardado en su teléfono por cada pedido o contrato entregado mientras el juego está abierto (por usted o por un mensajero). Cuando hay entregas que comunicar, envía el número a nuestro contador como máximo una vez cada tres minutos mientras usted juega (200 como máximo de una sola vez), y lo intenta una vez más cuando el juego se pone en pausa o se cierra (el teléfono puede detener el juego antes de que eso termine, y entonces el número espera en su teléfono y se envía la próxima vez que se abra el juego). Si no se puede contactar con el contador, el número espera en su teléfono, y el juego lo intenta de nuevo un minuto después, y otra vez, mientras el interruptor esté activado y el juego esté abierto. El juego también le pide el total al contador: cuando se activa el interruptor, cuando se abre el juego, cuando usted vuelve a él y el último total que recibió tiene cinco minutos o más, y cada diez minutos. Todos los jugadores que lo han activado suman al mismo total, y el total enciende la misma guirnalda de faroles en la partida de cada uno de ellos. Quien no lo ha activado no pierde nada: tenemos la intención de que una actualización posterior del juego encienda para todos los faroles que han encendido los jugadores.</p>
+<p>Lo que sale de su teléfono es el número, para qué festival es, la versión del juego y la dirección de internet (IP) que lleva toda solicitud a un servidor web. No lo acompaña ninguna cuenta, ningún nombre, ningún número que pertenezca a usted, al teléfono o al juego, ninguna cookie ni ningún texto escrito, y nunca su respuesta sobre el año de nacimiento. El contador es un pequeño servidor nuestro. Anota un total acumulado para cada festival y nada más (ni la dirección, ni la versión, ni la hora, ni ningún registro de ningún jugador), así que no podemos saber quién envió un conteo. Usa la dirección para una sola cosa además de responder: frenar un aluvión de solicitudes desde un mismo lugar. Para eso guarda cada dirección reciente, con la hora de sus últimas solicitudes, solo en la memoria del servidor en funcionamiento, durante el tiempo que Cloudflare mantenga en marcha esa copia del servidor (eso no lo controlamos nosotros: pueden ser minutos o muchas horas), y olvida una dirección que ha estado diez minutos sin actividad una vez que la lista se ha hecho larga. Nunca escribe la dirección en el almacenamiento, y nunca la usa para averiguar quién es usted, para contactar a nadie ni para crear un perfil.</p>
+<p>El contador funciona en <strong>Cloudflare</strong>, que lo aloja. Cloudflare ve cada conexión, incluida la dirección, y puede conservar registros técnicos breves de ella según su propia <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Política de Privacidad</a>. Hemos desactivado todos los logs y todos los registros por solicitud que Cloudflare nos permite desactivar para el contador (Workers Logs, traces, Logpush y tail consumers). Cloudflare conserva sus propios totales de cada servidor que aloja, como cuántas solicitudes y errores hubo, y puede conservar registros técnicos breves de cada conexión según su propia política; el contador no añade nada propio a lo que Cloudflare conserva.</p>
+<p>Al desactivarlo, todo se detiene de inmediato: ya no se envía ni se pide nada más, los faroles que están encendidos siguen encendidos, y el conteo aún no enviado se descarta. Al activarlo de nuevo, se empieza desde cero. La copia de seguridad propia de Android, si está activada, copia la configuración del juego y su partida guardada, así que una partida restaurada en otro teléfono sigue participando allí tal como participaba aquí, con el conteo que todavía no se había enviado (500 como máximo); para detenerlo, desactive el interruptor en Configuración en ese teléfono.</p>
+</section>
+<section class="card" id="saving-your-game-with-google-play-games-optional-for-players-13-and-over">
+<h2><span class="badge b-cloud"></span><span>Guardar su partida con Google Play Juegos (opcional, para jugadores de 13 años o más)</span></h2>
+<p>Un jugador que dijo tener 13 años o más ve, en Configuración, una tarjeta “Guardar en Google Play Juegos”. Está desactivada hasta que el jugador la activa, después de la pregunta para un adulto. Nadie más la ve, y el juego no inicia el software de Google Play Juegos para nadie más.</p>
+<p>Mientras está activada, el juego guarda una sola copia de la partida en la cuenta de Google del jugador (las “partidas guardadas” de Google Play Juegos) y la vuelve a leer cuando el juego se abre o después de un rato fuera, para que la partida pueda continuar en otro teléfono. La copia contiene la partida (las islas, las máquinas, los productos, las monedas, la decoración, los ayudantes y los contadores, el pedido del día y la fecha para la que se hizo y, si usted ha activado los faroles que todos encienden juntos, el conteo de entregas aún no enviadas a nuestro contador y el último total recibido), un número de partida aleatorio, un conteo de cuántas veces se guardó con un número aleatorio para cada guardado, la hora en que se guardó, una descripción breve (“Comfort 112, 7 h 5 min played”) y el tiempo jugado; no contiene compras, ni configuración, ni la nota del año de nacimiento, ni ninguna imagen. Google inicia la sesión del jugador cuando el juego se abre y conserva la copia para la cuenta del jugador: Google Play Juegos recopila lo que describe para sus partidas guardadas (el perfil de jugador, la partida guardada y diagnósticos) y a eso se aplican sus condiciones y su <a href="https://policies.google.com/privacy" rel="noopener noreferrer">política de privacidad</a>. Nosotros no recibimos la copia.</p>
+<p>Si el teléfono y la cuenta tienen cada uno una partida distinta, el juego nunca decide: muestra las dos una al lado de la otra y el jugador elige (después de la pregunta para un adulto); la que no se eligió se conserva en el teléfono como copia de reserva. “Dejar de guardar” en Configuración lo detiene (el juego no vuelve a iniciar el software hasta que se vuelva a activar), y “Dejar de guardar y borrar la copia de mi cuenta de Google” (después de la pregunta para un adulto) también borra la copia; las herramientas propias de Google Play Juegos y la configuración de Google del teléfono también pueden borrar las partidas guardadas de un jugador y cerrar la sesión.</p>
+</section>
+<section class="card" id="videos-ads">
+<h2><span class="badge b-watch"></span><span>Videos (anuncios)</span></h2>
+<p>Usted puede elegir ver un video corto, y solo entonces, para empezar un hechizo soleado o para duplicar lo que el juego recogió mientras usted estaba fuera. El juego nunca inicia un video por sí mismo, y quien tiene el Apoyo acogedor nunca necesita ver uno.</p>
+<p>Los videos los muestra <strong>Google AdMob</strong>. Como el juego también es para niños, le dice a Google que toda solicitud es para niños, cualquiera que haya sido la respuesta a la pregunta del año de nacimiento: los anuncios se limitan a la clasificación “Público general”, no se personalizan, y el paquete del juego no pide el ID de publicidad de Android (se elimina su permiso). No hay formulario de consentimiento porque nada se personaliza.</p>
+<p>El software Mobile Ads de Google forma parte del juego: Android inicia una pequeña parte de él cada vez que el juego se abre, como hace con toda aplicación que lo contiene. El propio juego activa el software, y le pide un video a Google, solo cuando el tutorial ha terminado y se han jugado diez minutos con el juego abierto; a partir de entonces, eso ocurre cada vez que el juego se abre, salvo en una partida que se abre como la de quien tiene el Apoyo acogedor, donde no ocurre en absoluto. (Si usted adquiere el Apoyo acogedor mientras el juego está abierto, el software que ya está en funcionamiento sigue activado hasta que se cierre el juego.) Antes de eso, el juego no le pide al software que se inicie ni que obtenga nada.</p>
+<p>Para mostrar un video y mantenerlo a salvo del fraude, el software Mobile Ads de Google dentro del juego recopila cierta información de su teléfono y la envía a Google, cifrada, de forma automática. La lista sigue la descripción que el propio Google publica de ese software:</p>
+<ul>
+<li>su dirección IP, que Google puede usar para estimar la ubicación general del teléfono;</li>
+<li>cómo usa la aplicación y el video, como los inicios de la aplicación, los toques y las visualizaciones de video;</li>
+<li>información de diagnóstico, como el tiempo de inicio de la aplicación, la tasa de bloqueos y el consumo de energía;</li>
+<li>identificadores del dispositivo, como el ID del conjunto de apps (un número que pertenece al juego en su teléfono, no a usted).</li>
+</ul>
+<p>Nosotros no recibimos esta información y no le añadimos nada propio. Google es responsable de lo que hace con ella: consulte la <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Política de Privacidad de Google</a> y <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">Cómo usa Google la información de sitios o aplicaciones que usan sus servicios</a>.</p>
+<p>Si prefiere no tener videos en absoluto, nunca tiene que ver ninguno, y quien tiene el Apoyo acogedor recibe los bonos sin ellos.</p>
+</section>
+<section class="card" id="purchases">
+<h2><span class="badge b-supporter"></span><span>Compras</span></h2>
+<p>Un adulto compra “Diorama Sakura”, “Jardín de neón”, “Campo de calabazas” y “Apoyo acogedor” a través de Google Play. Google realiza el cobro y muestra su propia pantalla de compra; nosotros nunca vemos su tarjeta ni sus datos de pago. Google le dice al juego si la compra se pagó, y el juego guarda en su teléfono una lista corta de qué productos tiene. No conservamos tokens de compra, números de pedido ni los datos de su cuenta de Google. “Restaurar compras” le pregunta a Google Play qué compras pertenecen a la cuenta de Google de su teléfono, y el juego le pregunta lo mismo, y le pide los precios, cada vez que se abre, para que no se pierda una compra hecha en otro teléfono, o una que todavía esperaba el pago. Las monedas del juego son solo una moneda de juego: no se pueden comprar y no son dinero.</p>
+</section>
+<section class="card" id="children">
+<h2><span class="badge b-capybara"></span><span>Niños</span></h2>
+<p>El juego está hecho para todas las personas a partir de los 3 años, niños incluidos. Lo diseñamos para seguir las normas sobre aplicaciones para niños, incluidas la Ley de Protección de la Privacidad de los Niños en Internet (COPPA, por sus siglas en inglés) y la política de Familias de Google Play: el juego no tiene cuenta propia, ni chat, ni ubicación, ni anuncios personalizados para nadie; no pide información personal; un niño, y un jugador cuya edad el juego no conoce, nunca ve la copia en una cuenta de Google y el juego nunca inicia ese software para ellos; las estadísticas de juego están desactivadas salvo que un adulto las active, y por ahora no se ofrecen a un niño; los faroles que todos encienden juntos están desactivados salvo que un adulto los active, y lo que el juego envía entonces es un número y la versión del juego, que no dicen nada sobre quién los envió, aparte de la dirección de internet que lleva toda solicitud; y lo que sale del juego (una compra, la copia en una cuenta de Google, las estadísticas de juego, el conteo de los faroles y esta página) está detrás de una pregunta para un adulto. No recopilamos a sabiendas información personal de niños. Si usted es madre, padre o tutor y cree que un niño nos ha enviado información personal, <a href="mailto:neonexalabs@gmail.com">escríbanos</a> a la dirección indicada arriba y le responderemos y, en la medida de lo posible, actuaremos al respecto.</p>
+<p>Los videos, las compras, las estadísticas de juego y Google Play Juegos involucran a Google, que tiene sus propias políticas para las cuentas de niños; la configuración de Google Play (y Family Link) permite que un padre o una madre decida qué puede comprar o instalar un niño. El contador de faroles funciona en Cloudflare, que lo aloja y no guarda nada de un niño aparte de la propia conexión.</p>
+</section>
+<section class="card" id="where-information-goes-and-how-it-is-protected">
+<h2><span class="badge b-lock"></span><span>Adónde va la información y cómo se protege</span></h2>
+<p>La información que recopila el software de Google (los videos, y las estadísticas de juego y la copia en una cuenta de Google cuando están activadas) va a Google, que puede procesarla en cualquier país donde opere. El conteo de los faroles, cuando está activado, va a nuestro contador en la red de Cloudflare, que puede manejarlo en cualquier país donde Cloudflare opere; nosotros conservamos los totales y nada sobre quién los envió. Todo se envía cifrado (TLS). Los archivos propios del juego permanecen en el almacenamiento privado del juego en su teléfono, que otras aplicaciones no pueden leer en un teléfono normal, sin modificar. Ninguna forma de almacenar o enviar información es completamente segura, por lo que no podemos prometer una seguridad absoluta.</p>
+</section>
+<section class="card" id="keeping-and-deleting-information">
+<h2><span class="badge b-clock"></span><span>Conservar y borrar la información</span></h2>
+<ul>
+<li><strong>En su teléfono:</strong> hasta que usted use “Empezar una partida nueva” (solo el progreso), borre el almacenamiento de la aplicación o desinstale el juego.</li>
+<li><strong>En la copia de seguridad de su cuenta de Google:</strong> hasta que usted borre la copia de seguridad o la desactive en la configuración de su teléfono.</li>
+<li><strong>La copia en su cuenta de Google (Google Play Juegos):</strong> hasta que usted deje de guardar y la borre en Configuración, la borre con las herramientas propias de Google Play Juegos o borre los datos de juegos de su cuenta de Google.</li>
+<li><strong>Estadísticas de juego:</strong> Google conserva los conteos durante dos meses. Nosotros no conservamos ninguna copia que identifique a nadie.</li>
+<li><strong>Información que recopila el software de Google para los videos:</strong> Google la conserva según sus propias políticas y plazos de conservación. Nosotros no conservamos ninguna copia, así que no podemos borrarla por usted.</li>
+<li><strong>El contador de faroles:</strong> un total acumulado para cada festival, que pensamos conservar mientras ese festival esté en el juego (nada lo borra por sí solo), y ningún registro de ningún jugador, así que no hay nada que borrar para un solo jugador; al desactivar el interruptor, ya no se añade nada más. La dirección de una solicitud se guarda solo en la memoria del servidor en funcionamiento, con la hora de sus últimas solicitudes, para frenar un aluvión desde un mismo lugar: nunca se escribe en el almacenamiento y se pierde cuando Cloudflare detiene esa copia del servidor (no controlamos cuándo: minutos o muchas horas), y una dirección que ha estado diez minutos sin actividad se descarta una vez que la lista es larga. Cloudflare, que aloja el contador, puede conservar sus propios registros breves de la conexión según su propia política.</li>
+<li><strong>Correos electrónicos que usted nos envíe:</strong> se conservan el tiempo necesario para responderle y ocuparnos del asunto, y después se borran.</li>
+</ul>
+</section>
+<section class="card" id="your-rights">
+<h2><span class="badge b-info"></span><span>Sus derechos</span></h2>
+<p>Según el lugar donde viva (por ejemplo, el Espacio Económico Europeo, el Reino Unido, Suiza, California y otros estados de Estados Unidos), usted o su hijo o hija pueden tener derechos sobre la información personal: verla, corregirla, borrarla, limitar su uso u oponerse a él, obtener una copia y presentar una queja ante su autoridad de protección de datos. El juego no nos da ningún nombre ni dato de contacto, y el conteo que puede enviarnos no dice nada sobre quién lo envió, así que no hay nada que podamos buscar ni borrar (la dirección de internet de una solicitud se usa solo como se describe en lo relativo al contador de faroles). Para la información que recopila el software de Google (los videos, las estadísticas de juego, la copia en su cuenta de Google), Google la conserva y sus herramientas (los enlaces de arriba y la configuración de su cuenta de Google) son la manera de ejercer estos derechos; para los registros que Cloudflare pueda conservar de la conexión con el contador de faroles, consulte la <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Política de Privacidad de Cloudflare</a>. Si no sabe por dónde empezar, <a href="mailto:neonexalabs@gmail.com">escríbanos</a> y le ayudaremos a encontrar el lugar adecuado.</p>
+</section>
+<section class="card" id="changes-to-this-policy">
+<h2><span class="badge b-blueprint"></span><span>Cambios en esta política</span></h2>
+<p>Podemos actualizar esta política, por ejemplo cuando añadimos una función. La fecha de entrada en vigor indicada arriba cambia cuando lo hacemos, y un cambio que recopile más información se publica antes de que se lance la actualización que lo necesita.</p>
+</section>
+<section class="card" id="contact">
+<h2><span class="badge b-parcel"></span><span>Contacto</span></h2>
+<p>NeonexaLabs<br>
+<a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></p>
+</section>
+</main>
+<footer>
+<div class="isles" aria-hidden="true"><span class="isle b-isle_wilderness"></span><span class="isle b-isle_workshop"></span><span class="isle b-isle_town"></span><span class="isle b-isle_portal"></span></div>
+<p>Tiny Archipelago &middot; NeonexaLabs &middot; Fecha de entrada en vigor <time datetime="2026-10-22">22 de octubre de 2026</time></p>
+</footer>
+</div>
+</body>
+</html>

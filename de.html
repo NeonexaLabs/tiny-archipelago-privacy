@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Datenschutzerklärung - Tiny Archipelago</title>
+<meta name="description" content="Die Datenschutzerklärung von Tiny Archipelago, einem gemütlichen Low-Poly-Inselspiel für Kinder und Familien, von NeonexaLabs.">
+<meta name="theme-color" content="#8fcdf3">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="assets/favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://neonexalabs.github.io/tiny-archipelago-privacy/de.html">
+<link rel="alternate" hreflang="en" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
+<link rel="alternate" hreflang="es" href="https://neonexalabs.github.io/tiny-archipelago-privacy/es.html">
+<link rel="alternate" hreflang="de" href="https://neonexalabs.github.io/tiny-archipelago-privacy/de.html">
+<link rel="alternate" hreflang="x-default" href="https://neonexalabs.github.io/tiny-archipelago-privacy/">
+<link rel="preload" href="assets/fonts/Nunito.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Nunito;src:url(assets/fonts/Nunito.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
+:root{--sky:#8fcdf3;--sky-light:#e4f4fd;--panel:#fff8ec;--edge:#ead6b8;--text:#5b4636;--muted:#7a6652;--green:#7cc25b;--green-dark:#3f7a2b;
+  --gold:#f2c35b;--gold-dark:#c9962e;--chip:#fffdf7;--btn:#fff1d6;--btn-edge:#e3c9a0;--callout:#e3f2d3;--callout-edge:#5a9a40;--callout-soft:#b9dda3;--th:#f6e7cc}
+*{box-sizing:border-box}
+html{color-scheme:only light;scroll-behavior:smooth;scroll-padding-top:16px}
+body{position:relative;margin:0;color:var(--text);background:var(--sky-light) linear-gradient(var(--sky),#c6e7f9 440px,var(--sky-light) 900px) no-repeat;
+  font:600 1rem/1.62 Nunito,"Trebuchet MS","Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.sky{position:absolute;top:0;left:0;right:0;height:720px;overflow:hidden;pointer-events:none}
+.cloud{position:absolute;background:linear-gradient(168deg,#fff 50%,#eef4fb 50% 72%,#dce8f4 72%);animation:float-in 5s ease-out both;
+  clip-path:polygon(4% 96%,0 70%,10% 50%,26% 48%,34% 22%,52% 6%,70% 20%,78% 40%,92% 44%,100% 70%,96% 94%,72% 100%,48% 92%,22% 100%)}
+.c3,.c5{clip-path:polygon(3% 100%,0 72%,12% 56%,30% 54%,42% 30%,58% 22%,72% 40%,90% 38%,100% 62%,97% 100%,70% 92%,38% 100%)}
+.c2,.c4{scale:-1 1}
+.c1{left:3%;top:12px;width:150px;height:62px}
+.c2{right:4%;top:30px;width:110px;height:46px}
+.c3,.c4,.c5{display:none}
+@keyframes float-in{from{transform:translateX(-30px)}}
+.wrap{position:relative;max-width:720px;margin:0 auto;padding:52px 16px 56px}
+.hero{display:block;width:100%;height:auto;border:4px solid var(--panel);border-radius:22px;background:#cfe9fb;box-shadow:0 10px 26px rgba(84,56,30,.24)}
+.title-card{position:relative;margin:-14px 10px 0;padding:16px 20px 18px}
+h1{margin:0 0 8px;font-size:clamp(1.9rem,7vw,2.6rem);line-height:1.1;font-weight:900}
+.meta{display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;align-items:baseline;margin:0}
+.meta div{display:contents}
+.meta dt{color:var(--muted);font-weight:700}
+.meta dd{margin:0;min-width:0;font-weight:700;overflow-wrap:anywhere}
+.mail{position:relative}
+.mail::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-10px}
+.callout{margin:24px 0 0}
+.jump{margin:22px 0 6px}
+.jump p{margin:0 0 8px;color:var(--muted);font-size:.9rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+nav ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+nav li{margin:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:6px 15px;color:var(--text);font-size:.95rem;font-weight:800;line-height:1.3;
+  text-decoration:none;background:var(--btn);border:2px solid var(--btn-edge);border-bottom-width:4px;border-radius:14px}
+nav a:hover{background:var(--callout);border-color:var(--callout-edge);color:var(--text)}
+nav a:active{background:#f1dfc0;padding:8px 15px 6px;border-bottom-width:2px}
+.title-card,.card,.callout{background:var(--panel);border:2px solid var(--edge);border-radius:18px;box-shadow:0 4px 12px rgba(84,56,31,.18)}
+.card,.callout{padding:18px 22px 20px}
+.card>:last-child,.callout>:last-child{margin-bottom:0}
+.card{margin:16px 0}
+.callout{background:var(--callout);border-color:var(--callout-edge)}
+h2{display:flex;align-items:center;gap:12px;margin:0 0 10px;font-size:clamp(1.3rem,5vw,1.65rem);line-height:1.2;font-weight:900}
+h2 span{min-width:0;overflow-wrap:anywhere}
+.badge{flex:none;width:44px;height:44px;background:var(--chip) center/28px no-repeat;border:2px solid var(--edge);border-radius:14px}
+.callout .badge{border-color:var(--callout-soft)}
+p,li{text-wrap:pretty}
+p,li{overflow-wrap:break-word}
+li{margin:5px 0}
+ul{padding-left:1.3em}
+li::marker{color:var(--green)}
+a{color:var(--green-dark);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:#2c5a1d}
+strong{color:#4a3628;font-weight:800}
+.tablewrap{overflow-x:auto;margin:14px 0;border:2px solid var(--edge);border-radius:14px;background:var(--chip)}
+table{border-collapse:collapse;width:100%}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
+th{background:var(--th);font-weight:800}
+tr:last-child td{border-bottom:0}
+footer{margin-top:40px;padding-top:6px;text-align:center;color:var(--muted);font-size:.95rem}
+.isles{display:flex;justify-content:center;gap:12px;margin:0 0 10px}
+.isle{width:40px;height:40px;background:center/contain no-repeat}
+footer p{margin:0;text-wrap:balance}
+:focus-visible{outline:3px solid var(--green-dark);outline-offset:3px}
+.rows{display:none;margin:12px 0;padding:0;list-style:none}
+.rows li{margin:0 0 12px;padding:8px 16px 10px;background:var(--chip);border:2px solid var(--edge);border-bottom-width:4px;border-radius:14px}
+.rows p{margin:0;font-size:1.08rem;font-weight:800}
+.rows dl{margin:0}
+.rows dt{margin-top:6px;color:var(--muted);font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.rows dd{margin:0}
+@media (max-width:640px){
+  .card,.callout{padding-left:18px;padding-right:18px}
+  .tablewrap{display:none}
+  .rows{display:block}
+}
+@media (max-width:420px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .title-card,.card,.callout{padding-left:16px;padding-right:16px}
+}
+@media (max-width:371px){
+  .meta{grid-template-columns:1fr}
+  .meta dt{font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+  .meta dd{margin-bottom:8px}
+}
+@media (min-width:641px){
+  body{font-size:1.125rem}
+  .title-card{padding-left:28px;padding-right:28px}
+  .card,.callout{padding-left:28px;padding-right:28px}
+}
+@media (min-width:900px){
+  .c3,.c4,.c5{display:block}
+  .c1{left:6%;top:50px;width:190px;height:78px}
+  .c2{right:7%;top:130px;width:140px;height:58px}
+  .c3{left:3%;top:330px;width:170px;height:70px}
+  .c4{right:3%;top:470px;width:200px;height:82px}
+  .c5{left:9%;top:640px;width:150px;height:62px}
+}
+@media (max-height:560px){
+  .hero{width:auto;max-width:100%;max-height:40vh;margin-left:auto;margin-right:auto}
+  .title-card{margin-top:12px}
+}
+@media (prefers-contrast:more){:root{--edge:#a8854f;--btn-edge:#a8854f}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cloud{animation:none}}
+@media print{
+  body{background:#fff}
+  .sky,.jump,.hero{display:none}
+  .card,.callout,.title-card{box-shadow:none;break-inside:avoid}
+  .title-card{margin:0}
+  a[href^="http"]::after{content:" (" attr(href) ")";overflow-wrap:anywhere}
+}
+
+.langs{margin:0 0 14px}
+.langs a[aria-current]{padding:8px 15px 6px;background:var(--callout);border-color:var(--callout-edge);border-bottom-width:2px}
+.langs a[aria-current]::before{content:"";flex:none;width:.4em;height:.8em;margin:-.2em .65em 0 .2em;border:solid currentColor;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.notice{margin:14px 0 0;padding:10px 14px;background:var(--btn);border:2px solid var(--btn-edge);border-left:8px solid var(--gold-dark);border-radius:14px}
+h1{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:560px){
+  html:not([lang=en]) .meta{grid-template-columns:1fr}
+  html:not([lang=en]) .meta dt{font-size:.875rem;font-weight:800;letter-spacing:0;text-transform:none}
+  html:not([lang=en]) .meta dd{margin-bottom:8px}
+}
+@media print{.langs{display:none}}
+.b-isle_wilderness{background-image:url(assets/icons/isle_wilderness.png)}
+.b-isle_workshop{background-image:url(assets/icons/isle_workshop.png)}
+.b-isle_town{background-image:url(assets/icons/isle_town.png)}
+.b-isle_portal{background-image:url(assets/icons/isle_portal.png)}
+.b-blueprint{background-image:url(assets/icons/blueprint.png)}
+.b-capybara{background-image:url(assets/icons/capybara.png)}
+.b-chart{background-image:url(assets/icons/chart.png)}
+.b-chest{background-image:url(assets/icons/chest.png)}
+.b-clock{background-image:url(assets/icons/clock.png)}
+.b-cloud{background-image:url(assets/icons/cloud.png)}
+.b-comfort{background-image:url(assets/icons/comfort.png)}
+.b-festival{background-image:url(assets/icons/festival.png)}
+.b-info{background-image:url(assets/icons/info.png)}
+.b-lock{background-image:url(assets/icons/lock.png)}
+.b-parcel{background-image:url(assets/icons/parcel.png)}
+.b-phone{background-image:url(assets/icons/phone.png)}
+.b-supporter{background-image:url(assets/icons/supporter.png)}
+.b-watch{background-image:url(assets/icons/watch.png)}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span><span class="cloud c5"></span></div>
+<div class="wrap">
+<header>
+<nav class="langs" aria-label="Sprache"><ul><li><a href="index.html" lang="en">English</a></li><li><a href="es.html" lang="es">Español</a></li><li><a href="de.html" lang="de" aria-current="page">Deutsch</a></li></ul></nav>
+<img class="hero" src="assets/feature.webp" alt="Tiny Archipelago, ein gemütliches Spiel mit schwebenden Inseln: vier kleine Low-Poly-Inseln, durch Seilbrücken verbunden, mit weißen Wolken ringsum." width="1024" height="500" fetchpriority="high">
+<div class="title-card">
+<h1>Datenschutzerklärung</h1>
+<dl class="meta">
+<div><dt>App</dt><dd>Tiny Archipelago</dd></div>
+<div><dt>Entwickler</dt><dd>NeonexaLabs</dd></div>
+<div><dt>Kontakt</dt><dd><a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></dd></div>
+<div><dt>Gültig ab</dt><dd><time datetime="2026-10-22">22. Oktober 2026</time></dd></div>
+</dl>
+<p class="notice">Diese Seite ist eine Übersetzung. Wenn sie von der englischen Seite abweicht, gilt die englische Seite.</p>
+</div>
+</header>
+<main>
+<section class="callout" id="in-short">
+<h2><span class="badge b-comfort"></span><span>Kurz gesagt</span></h2>
+<ul>
+<li>Das Spiel ist für alle ab 3 Jahren gemacht, Kinder und Familien eingeschlossen. Einmal fragt es, in welchem Jahr Sie geboren sind.</li>
+<li>Das Spiel speichert Ihren Fortschritt und Ihre Einstellungen auf Ihrem Handy. Es hat kein eigenes Konto. Unser einziger Server ist ein Laternenzähler (siehe unten), mit dem das Spiel nur kommuniziert, wenn ein Erwachsener das einschaltet.</li>
+<li>Wir fragen nicht nach einem Namen, einer E-Mail-Adresse, Kontakten, Fotos, einer Kamera, einem Mikrofon, einem Standort oder irgendetwas, das Sie eingeben, und das Spiel erfasst nichts davon. Es gibt keinen Chat und keine Möglichkeit, mit anderen Spielenden zu sprechen.</li>
+<li>Das Spiel prüft außerdem das Datum Ihres Handys, um ein Fest zu seiner Jahreszeit zu eröffnen und an jedem Tag, an dem Sie spielen, eine frische Bestellung ans Schwarze Brett zu hängen. Es verwendet ausschließlich das Datum auf Ihrem Handy: Das Spiel sendet es nicht an uns, und die Spielstatistiken enthalten es nicht. (Der Spielstand merkt sich den Tag, an dem die Bestellung für heute zuletzt erstellt wurde; die Kopie in Ihrem Google-Konto, falls Sie das einschalten, enthält den Spielstand, also speichert auch Google diesen Tag.)</li>
+<li>Spielstatistiken sind ausgeschaltet. Ein Erwachsener kann sie in den Einstellungen einschalten: Die Statistiken zählen nur Spielmomente (keine Namen, keine Texteingaben), und ein Fingertipp schaltet sie wieder aus.</li>
+<li>Die Laternen, die Spielende überall gemeinsam zum Leuchten bringen, sind ausgeschaltet. Ein Erwachsener kann sie in den Einstellungen einschalten: Dann sendet das Spiel unserem Zähler, wie viele Bestellungen und Aufträge Sie geliefert haben (eine Zahl), und die Version des Spiels und ruft die Gesamtzahl ab. Jede Anfrage enthält außerdem die Internetadresse Ihres Handys, wie es bei jeder Anfrage an einen Webserver der Fall ist; was der Zähler damit macht und was sein Hosting-Anbieter speichert, wird unten erklärt. Wir können nicht erkennen, wer was gesendet hat, und ein Fingertipp schaltet sie wieder aus.</li>
+<li>Spielende, die angeben, 13 Jahre oder älter zu sein, können wählen, ihr Spiel mit Google Play Spiele im eigenen Google-Konto zu speichern. Das ist freiwillig und ausgeschaltet, bis es eingeschaltet wird, und wird niemals anderen angeboten oder für sie gestartet.</li>
+<li>Sie können sich dafür entscheiden, für einen Bonus ein kurzes Video anzusehen. Die Videos kommen von Google AdMob und sind für Kinder eingestellt: Kein Video wird je personalisiert, und das Spiel fragt nicht nach der Android-Werbe-ID. Das ist für alle Spielenden gleich.</li>
+<li>„Sakura-Diorama“, „Neon-Garten“, „Kürbisfeld“ und „Wohlfühl-Unterstützung“ sind einmalige Käufe, die über Google Play abgewickelt werden. Wir sehen Ihre Zahlungsdaten nie.</li>
+<li>Ein Kauf, das Einschalten der Spielstatistiken, der Laternen, die alle gemeinsam zum Leuchten bringen, oder der Kopie in Ihrem Google-Konto, das Löschen dieser Kopie und die Webseite dieser Datenschutzerklärung liegen hinter einer Frage für Erwachsene.</li>
+</ul>
+</section>
+<nav class="jump" aria-labelledby="jump-label">
+<p id="jump-label">Zu einem Abschnitt springen</p>
+<ul><li><a href="#what-stays-on-your-phone">Was auf Ihrem Handy bleibt</a></li><li><a href="#your-birth-year">Ihr Geburtsjahr</a></li><li><a href="#play-statistics-optional-off-unless-a-grown-up-turns-them-on">Spielstatistiken</a></li><li><a href="#lanterns-everyone-lights-together-optional-off-unless-a-grown-up-turns-it-on">Laternen gemeinsam</a></li><li><a href="#saving-your-game-with-google-play-games-optional-for-players-13-and-over">Spiel speichern</a></li><li><a href="#videos-ads">Videos (Werbung)</a></li><li><a href="#purchases">Käufe</a></li><li><a href="#children">Kinder</a></li><li><a href="#where-information-goes-and-how-it-is-protected">Wohin es gelangt</a></li><li><a href="#keeping-and-deleting-information">Aufbewahren und Löschen</a></li><li><a href="#your-rights">Ihre Rechte</a></li><li><a href="#changes-to-this-policy">Änderungen</a></li><li><a href="#contact">Kontakt</a></li></ul>
+</nav>
+<section class="card" id="what-stays-on-your-phone">
+<h2><span class="badge b-chest"></span><span>Was auf Ihrem Handy bleibt</span></h2>
+<p>Das Spiel speichert Folgendes in seinem privaten Speicher auf Ihrem Handy:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th scope="col">Was</th>
+<th scope="col">Enthält</th>
+<th scope="col">So löschen Sie es</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spielstand</td>
+<td>die Inseln, Maschinen, Waren, Münzen, Deko und Helfer, die Sie haben, der Fortschritt im Tutorial, einfache Zähler (gesammelte Waren, gelieferte Bestellungen), wie viel von einem Sonnenzauber noch übrig ist, welche Laternen der Feste leuchten (und, wenn Sie die Laternen, die alle gemeinsam zum Leuchten bringen, eingeschaltet haben, wie viele Bestellungen das Spiel geliefert, unserem Zähler aber noch nicht mitgeteilt hat, und die Gesamtzahl, die es zuletzt abgerufen hat), die Bestellung für heute und das Datum, an dem sie zuletzt erstellt oder geliefert wurde, wann das Spiel zuletzt gespeichert wurde (damit es Ihren Willkommen-zurück-Bonus berechnen kann) und, wenn Sie in Google Play Spiele speichern, eine zufällige Spielnummer und ein Zähler, die sagen, welche Kopie in Ihrem Konto zu diesem Spiel gehört</td>
+<td>Einstellungen &gt; Neues Spiel beginnen (Ihre Einstellungen und Käufe bleiben erhalten) oder das Spiel deinstallieren</td>
+</tr>
+<tr>
+<td>Reservekopie</td>
+<td>der Spielstand, der bei der Wahl zwischen dem Handy und Ihrem Google-Konto nicht gewählt wurde, oder der Spielstand, den ein neues Spiel ersetzt hat, während die Kopie in Ihrem Konto eingeschaltet war: dieselben Inhalte wie ein Spielstand</td>
+<td>Einstellungen &gt; Kopie löschen oder das Spiel deinstallieren</td>
+</tr>
+<tr>
+<td>Geburtsjahr-Notiz</td>
+<td>nur, ob Ihre Antwort auf die Frage nach dem Geburtsjahr „13 und älter“ bedeutet oder nicht, und wann Sie geantwortet haben: niemals das Jahr</td>
+<td>das Spiel deinstallieren</td>
+</tr>
+<tr>
+<td>Käufe</td>
+<td>welche Produkte Sie besitzen: ein kurzer Name für jedes</td>
+<td>Das Spiel deinstallieren (Google Play kennt Ihre Käufe weiterhin, und „Käufe wiederherstellen“ holt sie zurück)</td>
+</tr>
+<tr>
+<td>Einstellungen</td>
+<td>die Lautstärke von Musik, Geräuschen und Naturgeräuschen, Vibration, die Timing-Hilfe, Bewegung reduzieren, Schatten, die Textgröße, die Sprache, der Look der Inseln und ob die Kopie in Ihrem Google-Konto, die Spielstatistiken und die Laternen, die alle gemeinsam zum Leuchten bringen, eingeschaltet sind</td>
+<td>Das Spiel deinstallieren</td>
+</tr>
+</tbody>
+</table></div>
+<ul class="rows"><li><p>Spielstand</p><dl><dt>Enthält</dt><dd>die Inseln, Maschinen, Waren, Münzen, Deko und Helfer, die Sie haben, der Fortschritt im Tutorial, einfache Zähler (gesammelte Waren, gelieferte Bestellungen), wie viel von einem Sonnenzauber noch übrig ist, welche Laternen der Feste leuchten (und, wenn Sie die Laternen, die alle gemeinsam zum Leuchten bringen, eingeschaltet haben, wie viele Bestellungen das Spiel geliefert, unserem Zähler aber noch nicht mitgeteilt hat, und die Gesamtzahl, die es zuletzt abgerufen hat), die Bestellung für heute und das Datum, an dem sie zuletzt erstellt oder geliefert wurde, wann das Spiel zuletzt gespeichert wurde (damit es Ihren Willkommen-zurück-Bonus berechnen kann) und, wenn Sie in Google Play Spiele speichern, eine zufällige Spielnummer und ein Zähler, die sagen, welche Kopie in Ihrem Konto zu diesem Spiel gehört</dd><dt>So löschen Sie es</dt><dd>Einstellungen &gt; Neues Spiel beginnen (Ihre Einstellungen und Käufe bleiben erhalten) oder das Spiel deinstallieren</dd></dl></li><li><p>Reservekopie</p><dl><dt>Enthält</dt><dd>der Spielstand, der bei der Wahl zwischen dem Handy und Ihrem Google-Konto nicht gewählt wurde, oder der Spielstand, den ein neues Spiel ersetzt hat, während die Kopie in Ihrem Konto eingeschaltet war: dieselben Inhalte wie ein Spielstand</dd><dt>So löschen Sie es</dt><dd>Einstellungen &gt; Kopie löschen oder das Spiel deinstallieren</dd></dl></li><li><p>Geburtsjahr-Notiz</p><dl><dt>Enthält</dt><dd>nur, ob Ihre Antwort auf die Frage nach dem Geburtsjahr „13 und älter“ bedeutet oder nicht, und wann Sie geantwortet haben: niemals das Jahr</dd><dt>So löschen Sie es</dt><dd>das Spiel deinstallieren</dd></dl></li><li><p>Käufe</p><dl><dt>Enthält</dt><dd>welche Produkte Sie besitzen: ein kurzer Name für jedes</dd><dt>So löschen Sie es</dt><dd>Das Spiel deinstallieren (Google Play kennt Ihre Käufe weiterhin, und „Käufe wiederherstellen“ holt sie zurück)</dd></dl></li><li><p>Einstellungen</p><dl><dt>Enthält</dt><dd>die Lautstärke von Musik, Geräuschen und Naturgeräuschen, Vibration, die Timing-Hilfe, Bewegung reduzieren, Schatten, die Textgröße, die Sprache, der Look der Inseln und ob die Kopie in Ihrem Google-Konto, die Spielstatistiken und die Laternen, die alle gemeinsam zum Leuchten bringen, eingeschaltet sind</dd><dt>So löschen Sie es</dt><dd>Das Spiel deinstallieren</dd></dl></li></ul>
+<p>Wir können diese Dateien nicht sehen. Wenn Androids eigene Sicherung auf Ihrem Handy eingeschaltet ist, kann Android sie in die Sicherung Ihres Google-Kontos kopieren, damit Ihr Spiel auf einem neuen Handy wieder da ist. Das ist eine Funktion von Android und Google, nicht dieses Spiels, und Sie können sie in den Einstellungen Ihres Handys ausschalten.</p>
+<p>Das Spiel prüft außerdem das Datum Ihres Handys, um ein Fest zu seiner Jahreszeit zu eröffnen und um die Bestellung für heute zu erstellen, eine frische Bestellung am Schwarzen Brett für jeden Tag, an dem Sie spielen (das Datum bestimmt, welche Waren sie verlangt). Es verwendet ausschließlich das Datum auf Ihrem Handy: Das Spiel sendet es nicht an uns, und die Spielstatistiken enthalten es nicht. Der Spielstand merkt sich das Datum, an dem die Bestellung für heute zuletzt erstellt oder geliefert wurde, damit die nächste an einem späteren Tag erstellt wird; die Kopie in Ihrem Google-Konto, falls Sie das einschalten, enthält den Spielstand und damit auch dieses Datum, ebenso Androids eigene Sicherung, wenn sie eingeschaltet ist. Die Kopie in Ihrem Google-Konto und die Spielstatistiken vermerken jeweils, wann sie erstellt wurden, wie unten beschrieben.</p>
+</section>
+<section class="card" id="your-birth-year">
+<h2><span class="badge b-phone"></span><span>Ihr Geburtsjahr</span></h2>
+<p>Wenn Sie zum ersten Mal spielen, fragt das Spiel: „In welchem Jahr sind Sie geboren?“ Sie können ein Jahr eingeben oder die Frage überspringen. Das Spiel behält auf Ihrem Handy nur, ob Ihre Antwort „13 und älter“ bedeutet oder nicht (nicht das Jahr selbst), und sendet es nirgendwohin, auch nicht in den Spielstatistiken. Das Überspringen oder ein Jahr, das das Spiel nicht glauben kann, zählt als Kind. Die Antwort entscheidet, ob die Kopie in Ihrem Google-Konto (siehe unten) angeboten wird und, vorerst, ob die Spielstatistiken angeboten werden. Sonst ändert die Antwort nichts: Die Videos, die Käufe und das Spiel sind bei jeder Antwort gleich. Ein Erwachsener kann unter Einstellungen &gt; Info noch einmal antworten, hinter der Frage für Erwachsene.</p>
+</section>
+<section class="card" id="play-statistics-optional-off-unless-a-grown-up-turns-them-on">
+<h2><span class="badge b-chart"></span><span>Spielstatistiken (freiwillig, aus, solange kein Erwachsener sie einschaltet)</span></h2>
+<p>In den Einstellungen kann ein Erwachsener „Spielstatistiken teilen“ einschalten, nach der Frage für Erwachsene und einer kurzen Karte, die erklärt, was gezählt wird. Vorerst wird der Schalter nur Spielenden angeboten, die angegeben haben, 13 Jahre oder älter zu sein. Solange er ausgeschaltet ist, startet das Spiel die Software, die zählt, nicht und zählt nichts; ein Fingertipp schaltet ihn wieder aus und stoppt das Zählen sofort.</p>
+<p>Solange er eingeschaltet ist, zählt das Spiel Spielmomente und sendet die Zählungen an <strong>Google Analytics for Firebase</strong> (Google). Eine Zählung besteht aus einer Art von Moment und einigen Zahlen aus den eigenen Daten des Spiels, zum Beispiel „eine Bestellung wurde geliefert“, „ein Meilenstein wurde erreicht“, „ein Fest hat begonnen“, „eine Laterne wurde zum Leuchten gebracht“, wie lange eine Spielsitzung dauerte, welches der neun Fenster geöffnet wurde und ob ein Videobonus angefordert wurde und wie er endete. Eine Zählung enthält keinen Namen, keine Texteingaben, kein Alter und kein Geburtsjahr, und sie betrifft nie einen Kauf oder die Kopie in Ihrem Google-Konto.</p>
+<p>Die Software von Google erfasst außerdem von sich aus, automatisch, einige Informationen und sendet sie verschlüsselt an Google:</p>
+<ul>
+<li>Ihre IP-Adresse, aus der Google das Land ermittelt (und den ungefähren Standort des Handys schätzen kann);</li>
+<li>wann das Spiel geöffnet wird und wie lange, und wann es aktualisiert wird;</li>
+<li>das Modell Ihres Handys, seine Android-Version, die Version des Spiels und die Sprache;</li>
+<li>eine Zufallszahl, die zum Spiel auf Ihrem Handy gehört, nicht zu Ihnen (die App-Instanz-ID);</li>
+<li>welcher Link oder welche Seite von Google Play zur Installation geführt hat, wenn Google Play das angibt (der Install Referrer);</li>
+<li>weil die Software des Spiels für Käufe und Videos ebenfalls zur Software von Google gehört, kann Google Analytics auch von sich aus einen Kauf (mit dem Produkt und seinem Preis) oder die Ereignisse eines Videos zählen.</li>
+</ul>
+<p>Das Spiel schaltet die Werbe-ID, die Personalisierung von Werbung und jede Einwilligung für Werbung aus, und Google Analytics ist so eingerichtet, dass Google-Signale und jede Einstellung zur Datenfreigabe ausgeschaltet sind; die Zählungen sind nicht mit Google Ads, AdMob oder Google Play verknüpft. Google bewahrt die Zählungen zwei Monate lang auf und ist für das verantwortlich, was es damit tut: siehe <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Datenschutzerklärung von Google</a> und <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">Wie Google Informationen von Websites oder Apps verwendet, die seine Dienste nutzen</a>. Wir erhalten die Zählungen, nicht aber, wer sie gesendet hat, und können nicht erkennen, von welchem Handy oder von welcher Person eine Zählung stammt. Deshalb gibt es für uns nichts, was wir für eine einzelne Person nachschlagen oder löschen könnten; wenn der Schalter ausgeschaltet wird, wird nichts mehr gezählt.</p>
+</section>
+<section class="card" id="lanterns-everyone-lights-together-optional-off-unless-a-grown-up-turns-it-on">
+<h2><span class="badge b-festival"></span><span>Laternen, die alle gemeinsam zum Leuchten bringen (freiwillig, aus, solange kein Erwachsener es einschaltet)</span></h2>
+<p>In den Einstellungen kann ein Erwachsener „Laternen mit allen leuchten lassen“ einschalten, nach der Frage für Erwachsene und einer kurzen Karte, die erklärt, was gesendet wird. Es wird allen Spielenden angeboten, gleich wie die Frage nach dem Geburtsjahr beantwortet wurde. Solange es ausgeschaltet ist, sendet das Spiel überhaupt keine Anfrage an unseren Zähler; ein Fingertipp schaltet es wieder aus und stoppt es sofort.</p>
+<p>Solange es eingeschaltet ist, erhöht das Spiel eine Zahl auf Ihrem Handy um eins, für jede Bestellung und jeden Auftrag, die geliefert werden, während das Spiel geöffnet ist (durch Sie oder durch einen Kurier). Wenn es Lieferungen zu melden gibt, sendet es die Zahl höchstens einmal alle drei Minuten an unseren Zähler, solange Sie spielen (höchstens 200 auf einmal), und versucht es noch einmal, wenn das Spiel pausiert oder geschlossen wird (das Handy kann das Spiel beenden, bevor das abgeschlossen ist; dann wartet die Zahl auf Ihrem Handy und wird gesendet, wenn das Spiel das nächste Mal geöffnet ist). Wenn der Zähler nicht erreichbar ist, wartet die Zahl auf Ihrem Handy, und das Spiel versucht es eine Minute später noch einmal, und wieder, solange der Schalter eingeschaltet und das Spiel geöffnet ist. Das Spiel fragt den Zähler außerdem nach der Gesamtzahl: wenn der Schalter eingeschaltet wird, wenn das Spiel geöffnet wird, wenn Sie zum Spiel zurückkehren und die zuletzt abgerufene Gesamtzahl fünf Minuten alt oder älter ist, und alle zehn Minuten. Alle Spielenden, die es eingeschaltet haben, tragen zur selben Gesamtzahl bei, und die Gesamtzahl bringt in jedem ihrer Spiele dieselbe Laternenkette zum Leuchten. Wer es nicht eingeschaltet hat, verliert nichts: Wir haben vor, mit einem späteren Update des Spiels die Laternen zum Leuchten zu bringen, die Spielende für alle zum Leuchten gebracht haben.</p>
+<p>Was Ihr Handy verlässt, sind die Zahl, das Fest, für das sie gilt, die Version des Spiels und die Internetadresse (IP-Adresse), die jede Anfrage an einen Webserver enthält. Kein Konto, kein Name, keine Nummer, die zu Ihnen, zum Handy oder zum Spiel gehört, kein Cookie und kein eingegebener Text werden mitgesendet, und nie Ihre Antwort auf die Frage nach dem Geburtsjahr. Der Zähler ist ein kleiner Server von uns. Er schreibt für jedes Fest eine fortlaufende Gesamtzahl auf und sonst nichts (nicht die Adresse, die Version oder die Zeit, und keine Aufzeichnung über irgendeine spielende Person), deshalb können wir nicht erkennen, wer eine Zahl gesendet hat. Er verwendet die Adresse für eine einzige Sache außer dem Antworten: um eine Flut von Anfragen von einem Ort zu bremsen. Dafür hält er jede kürzlich verwendete Adresse, mit dem Zeitpunkt ihrer letzten Anfragen, nur im Arbeitsspeicher des laufenden Servers, so lange, wie Cloudflare diese Kopie des Servers laufen lässt (das bestimmen wir nicht: Es können Minuten oder viele Stunden sein), und er vergisst eine Adresse, von der zehn Minuten lang keine Anfrage kam, sobald die Liste lang geworden ist. Er schreibt die Adresse nie in einen dauerhaften Speicher und verwendet sie nie, um herauszufinden, wer Sie sind, um jemanden zu kontaktieren oder um ein Profil zu erstellen.</p>
+<p>Der Zähler läuft bei <strong>Cloudflare</strong>, das ihn hostet. Cloudflare sieht jede Verbindung, einschließlich der Adresse, und kann kurze technische Aufzeichnungen darüber nach seiner eigenen <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Datenschutzerklärung</a> aufbewahren. Wir haben jedes Protokoll und jede Aufzeichnung pro Anfrage ausgeschaltet, die Cloudflare uns für den Zähler ausschalten lässt (Workers Logs, Traces, Logpush und Tail Consumers). Cloudflare führt für jeden Server, den es hostet, eigene Gesamtzahlen, etwa wie viele Anfragen und Fehler es gab, und kann kurze technische Aufzeichnungen jeder Verbindung nach seiner eigenen Richtlinie aufbewahren; der Zähler fügt dem, was Cloudflare aufbewahrt, nichts Eigenes hinzu.</p>
+<p>Das Ausschalten stoppt alles sofort: Es wird nichts mehr gesendet oder abgefragt, die Laternen, die leuchten, leuchten weiter, und die noch nicht gesendete Zahl wird verworfen. Wird es wieder eingeschaltet, beginnt es bei null. Androids eigene Sicherung kopiert, wenn sie eingeschaltet ist, die Einstellungen des Spiels und seinen Spielstand. Deshalb nimmt ein Spiel, das auf einem anderen Handy wiederhergestellt wird, dort genauso teil wie hier, mit der Zahl, die noch nicht gesendet worden war (höchstens 500); um das zu stoppen, schalten Sie auf jenem Handy den Schalter in den Einstellungen aus.</p>
+</section>
+<section class="card" id="saving-your-game-with-google-play-games-optional-for-players-13-and-over">
+<h2><span class="badge b-cloud"></span><span>Ihr Spiel mit Google Play Spiele speichern (freiwillig, für Spielende ab 13 Jahren)</span></h2>
+<p>Wer angegeben hat, 13 Jahre oder älter zu sein, sieht in den Einstellungen eine Karte „In Google Play Spiele speichern“. Das Speichern ist ausgeschaltet, bis die spielende Person es einschaltet, nach der Frage für Erwachsene. Niemand sonst sieht die Karte, und das Spiel startet für niemanden sonst die Software von Google Play Spiele.</p>
+<p>Solange das Speichern eingeschaltet ist, bewahrt das Spiel eine Kopie des Spielstands im Google-Konto der spielenden Person auf („gespeicherte Spiele“ von Google Play Spiele) und liest sie zurück, wenn das Spiel geöffnet wird oder nachdem man eine Weile weg war, damit das Spiel auf einem anderen Handy fortgesetzt werden kann. Die Kopie enthält den Spielstand (die Inseln, Maschinen, Waren, Münzen, Deko, Helfer und Zähler, die Bestellung für heute und den Tag, für den sie erstellt wurde, und, wenn Sie die Laternen, die alle gemeinsam zum Leuchten bringen, eingeschaltet haben, die Zahl der Lieferungen, die noch nicht an unseren Zähler gesendet wurden, und die zuletzt abgerufene Gesamtzahl), eine zufällige Spielnummer, einen Zähler dafür, wie oft gespeichert wurde, mit einer Zufallszahl für jedes Speichern, den Zeitpunkt des Speicherns, eine kurze Beschreibung („Comfort 112, 7 h 5 min played“) und die Spielzeit; sie enthält keine Käufe, keine Einstellungen und keine Geburtsjahr-Notiz und kein Bild. Google meldet die spielende Person an, wenn das Spiel geöffnet wird, und bewahrt die Kopie für deren Konto auf: Google Play Spiele erfasst, was es für seine gespeicherten Spiele beschreibt (das Spielerprofil der spielenden Person, den gespeicherten Spielstand und Diagnosedaten), und dafür gelten seine Nutzungsbedingungen und seine <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Datenschutzerklärung</a>. Wir erhalten die Kopie nicht.</p>
+<p>Wenn das Handy und das Konto jeweils einen anderen Spielstand enthalten, entscheidet das Spiel nie selbst: Es zeigt beide nebeneinander, und die spielende Person wählt (nach der Frage für Erwachsene); der Spielstand, der nicht gewählt wurde, bleibt als Reservekopie auf dem Handy. „Speichern beenden“ in den Einstellungen beendet das Speichern (das Spiel startet die Software erst wieder, wenn das Speichern wieder eingeschaltet wird), und „Speichern beenden und die Kopie in meinem Google-Konto löschen“ (nach der Frage für Erwachsene) löscht außerdem die Kopie; die eigenen Werkzeuge von Google Play Spiele und die Google-Einstellungen des Handys können die gespeicherten Spiele einer spielenden Person ebenfalls löschen und sie abmelden.</p>
+</section>
+<section class="card" id="videos-ads">
+<h2><span class="badge b-watch"></span><span>Videos (Werbung)</span></h2>
+<p>Nur wenn Sie sich dafür entscheiden, sehen Sie ein kurzes Video, um einen Sonnenzauber zu starten oder um zu verdoppeln, was das Spiel gesammelt hat, während Sie weg waren. Das Spiel startet nie von sich aus ein Video, und wer die Wohlfühl-Unterstützung hat, muss nie eines ansehen.</p>
+<p>Die Videos werden von <strong>Google AdMob</strong> gezeigt. Weil das Spiel auch für Kinder gedacht ist, teilt es Google mit, dass jede Anfrage für Kinder gilt, gleich wie die Frage nach dem Geburtsjahr beantwortet wurde: Werbung ist auf die Einstufung „Allgemeines Publikum“ beschränkt, sie ist nicht personalisiert, und das Paket des Spiels fragt nicht nach der Android-Werbe-ID (die zugehörige Berechtigung ist entfernt). Es gibt kein Einwilligungsformular, weil nichts personalisiert wird.</p>
+<p>Die Mobile-Ads-Software von Google ist ein Teil des Spiels: Android startet jedes Mal, wenn das Spiel geöffnet wird, einen kleinen Teil davon, wie bei jeder App, die sie enthält. Das Spiel selbst schaltet die Software erst dann ein und fragt Google erst dann nach einem Video, wenn das Tutorial abgeschlossen ist und zehn Minuten bei geöffnetem Spiel gespielt wurden; von da an geschieht das jedes Mal, wenn das Spiel geöffnet wird, außer in einem Spiel, das mit der Wohlfühl-Unterstützung geöffnet wird, wo es gar nicht geschieht. (Wenn Sie die Wohlfühl-Unterstützung bekommen, während das Spiel geöffnet ist, bleibt die bereits laufende Software eingeschaltet, bis das Spiel geschlossen wird.) Davor bittet das Spiel die Software weder zu starten noch etwas abzurufen.</p>
+<p>Um ein Video zu zeigen und es vor Betrug zu schützen, erfasst die Mobile-Ads-Software von Google im Spiel einige Informationen von Ihrem Handy und sendet sie automatisch verschlüsselt an Google. Die Liste folgt der eigenen veröffentlichten Beschreibung von Google zu dieser Software:</p>
+<ul>
+<li>Ihre IP-Adresse, die Google verwenden kann, um den ungefähren Standort des Handys zu schätzen;</li>
+<li>wie Sie die App und das Video nutzen, etwa App-Starts, Fingertipps und Videoaufrufe;</li>
+<li>Diagnoseinformationen, etwa die Startzeit der App, die Hängerate und der Energieverbrauch;</li>
+<li>Gerätekennungen wie die App-Set-ID (eine Nummer, die zum Spiel auf Ihrem Handy gehört, nicht zu Ihnen).</li>
+</ul>
+<p>Wir erhalten diese Informationen nicht und fügen ihnen nichts Eigenes hinzu. Google ist für das verantwortlich, was es damit tut: siehe <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Datenschutzerklärung von Google</a> und <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">Wie Google Informationen von Websites oder Apps verwendet, die seine Dienste nutzen</a>.</p>
+<p>Wenn Sie lieber gar keine Videos möchten, müssen Sie nie eines ansehen, und wer die Wohlfühl-Unterstützung hat, bekommt die Boni ohne sie.</p>
+</section>
+<section class="card" id="purchases">
+<h2><span class="badge b-supporter"></span><span>Käufe</span></h2>
+<p>„Sakura-Diorama“, „Neon-Garten“, „Kürbisfeld“ und „Wohlfühl-Unterstützung“ werden von einem Erwachsenen über Google Play gekauft. Google nimmt die Zahlung entgegen und zeigt seinen eigenen Kaufbildschirm; wir sehen nie Ihre Karten- oder Zahlungsdaten. Google teilt dem Spiel mit, ob der Kauf bezahlt wurde, und das Spiel führt auf Ihrem Handy eine kurze Liste darüber, welche Produkte Sie besitzen. Wir speichern keine Kauf-Tokens, Bestellnummern oder Angaben zu Ihrem Google-Konto. „Käufe wiederherstellen“ fragt Google Play, welche Käufe zum Google-Konto auf Ihrem Handy gehören, und das Spiel fragt dasselbe, und nach den Preisen, jedes Mal, wenn es geöffnet wird, damit ein Kauf, der auf einem anderen Handy gemacht wurde oder noch auf die Zahlung wartete, nicht verloren geht. Die Münzen im Spiel sind nur eine Spielwährung: Man kann sie nicht kaufen, und sie sind kein Geld.</p>
+</section>
+<section class="card" id="children">
+<h2><span class="badge b-capybara"></span><span>Kinder</span></h2>
+<p>Das Spiel ist für alle ab 3 Jahren gemacht, Kinder eingeschlossen. Wir haben es so gestaltet, dass es den Regeln für Apps für Kinder folgt, darunter dem Children&rsquo;s Online Privacy Protection Act (COPPA) und der Families-Richtlinie von Google Play: Das Spiel hat kein eigenes Konto, keinen Chat, keinen Standort und für niemanden personalisierte Werbung; es fragt nach keinen personenbezogenen Daten; ein Kind und Spielende, deren Alter das Spiel nicht kennt, sehen die Kopie in einem Google-Konto nie, und das Spiel startet diese Software nie für sie; Spielstatistiken sind ausgeschaltet, solange kein Erwachsener sie einschaltet, und werden vorerst keinem Kind angeboten; die Laternen, die alle gemeinsam zum Leuchten bringen, sind ausgeschaltet, solange kein Erwachsener sie einschaltet, und was das Spiel dann sendet, sind eine Zahl und die Version des Spiels, die nichts darüber sagen, wer sie gesendet hat, abgesehen von der Internetadresse, die jede Anfrage enthält; und was das Spiel verlässt (ein Kauf, die Kopie in einem Google-Konto, die Spielstatistiken, die Zahl für die Laternen und diese Seite), liegt hinter einer Frage für Erwachsene. Wir erfassen wissentlich keine personenbezogenen Daten von Kindern. Wenn Sie Elternteil oder erziehungsberechtigt sind und glauben, dass ein Kind uns personenbezogene Daten geschickt hat, <a href="mailto:neonexalabs@gmail.com">schreiben Sie uns</a> an die oben genannte Adresse, und wir antworten und handeln, soweit wir können, entsprechend.</p>
+<p>An den Videos, Käufen, Spielstatistiken und Google Play Spiele ist Google beteiligt, das eigene Richtlinien für Konten von Kindern hat; mit den Einstellungen von Google Play (und Family Link) kann ein Elternteil entscheiden, was ein Kind kaufen oder installieren darf. Der Laternenzähler läuft bei Cloudflare, das ihn hostet und nichts von einem Kind aufbewahrt außer der Verbindung selbst.</p>
+</section>
+<section class="card" id="where-information-goes-and-how-it-is-protected">
+<h2><span class="badge b-lock"></span><span>Wohin Informationen gelangen und wie sie geschützt werden</span></h2>
+<p>Von der Software von Google erfasste Informationen (die Videos sowie die Spielstatistiken und die Kopie in einem Google-Konto, wenn diese eingeschaltet sind) gelangen zu Google, das sie in jedem Land verarbeiten kann, in dem es tätig ist. Die Zahl für die Laternen gelangt, wenn diese Funktion eingeschaltet ist, zu unserem Zähler im Netzwerk von Cloudflare, das sie in jedem Land handhaben kann, in dem Cloudflare tätig ist; wir speichern die Gesamtzahlen und nichts darüber, wer sie gesendet hat. Alles wird verschlüsselt gesendet (TLS). Die eigenen Dateien des Spiels bleiben im privaten Speicher des Spiels auf Ihrem Handy, den andere Apps auf einem normalen, unveränderten Handy nicht lesen können. Keine Art, Informationen zu speichern oder zu senden, ist vollkommen sicher, deshalb können wir keine absolute Sicherheit versprechen.</p>
+</section>
+<section class="card" id="keeping-and-deleting-information">
+<h2><span class="badge b-clock"></span><span>Informationen aufbewahren und löschen</span></h2>
+<ul>
+<li><strong>Auf Ihrem Handy:</strong> bis Sie „Neues Spiel beginnen“ verwenden (nur der Fortschritt), den Speicher der App leeren oder das Spiel deinstallieren.</li>
+<li><strong>In der Sicherung Ihres Google-Kontos:</strong> bis Sie die Sicherung löschen oder sie in den Einstellungen Ihres Handys ausschalten.</li>
+<li><strong>Die Kopie in Ihrem Google-Konto (Google Play Spiele):</strong> bis Sie das Speichern beenden und sie in den Einstellungen löschen, sie mit den eigenen Werkzeugen von Google Play Spiele löschen oder die Spieledaten Ihres Google-Kontos löschen.</li>
+<li><strong>Spielstatistiken:</strong> Google bewahrt die Zählungen zwei Monate lang auf. Wir bewahren keine Kopie auf, die jemanden identifiziert.</li>
+<li><strong>Von der Software von Google für die Videos erfasste Informationen:</strong> Google bewahrt sie nach seinen eigenen Richtlinien und Aufbewahrungsfristen auf. Wir bewahren keine Kopie auf, deshalb können wir sie nicht für Sie löschen.</li>
+<li><strong>Der Laternenzähler:</strong> eine fortlaufende Gesamtzahl für jedes Fest, die wir so lange aufbewahren wollen, wie das Fest im Spiel ist (nichts löscht sie von selbst), und keine Aufzeichnung über irgendeine spielende Person, deshalb gibt es für eine einzelne Person nichts zu löschen; wenn der Schalter ausgeschaltet wird, wird nichts mehr hinzugefügt. Die Adresse einer Anfrage wird nur im Arbeitsspeicher des laufenden Servers gehalten, mit dem Zeitpunkt ihrer letzten Anfragen, um eine Flut von einem Ort zu bremsen: Die Adresse wird nie in einen dauerhaften Speicher geschrieben und geht verloren, wenn Cloudflare diese Kopie des Servers beendet (wann das geschieht, bestimmen wir nicht: Minuten oder viele Stunden), und eine Adresse, von der zehn Minuten lang keine Anfrage kam, wird verworfen, sobald die Liste lang ist. Cloudflare, das den Zähler hostet, kann nach seiner eigenen Richtlinie eigene kurze Aufzeichnungen der Verbindung aufbewahren.</li>
+<li><strong>E-Mails an uns:</strong> werden so lange aufbewahrt, wie es nötig ist, um Ihnen zu antworten und die Angelegenheit zu bearbeiten, und dann gelöscht.</li>
+</ul>
+</section>
+<section class="card" id="your-rights">
+<h2><span class="badge b-info"></span><span>Ihre Rechte</span></h2>
+<p>Je nachdem, wo Sie leben (zum Beispiel im Europäischen Wirtschaftsraum (EWR), im Vereinigten Königreich, in der Schweiz, in Kalifornien und in anderen US-Bundesstaaten), können Sie oder Ihr Kind Rechte in Bezug auf personenbezogene Daten haben: sie einzusehen, zu berichtigen, zu löschen, ihre Nutzung einzuschränken oder ihr zu widersprechen, eine Kopie zu erhalten und sich bei Ihrer Datenschutzbehörde zu beschweren. Das Spiel gibt uns keinen Namen und keine Kontaktangabe, und die Zahl, die es uns senden kann, sagt nichts darüber, wer sie gesendet hat, deshalb gibt es für uns nichts nachzuschlagen oder zu löschen (die Internetadresse einer Anfrage wird nur so verwendet, wie im Abschnitt über den Laternenzähler beschrieben). Die Informationen, die die Software von Google erfasst (die Videos, die Spielstatistiken, die Kopie in Ihrem Google-Konto), liegen bei Google, und seine Werkzeuge (die Links oben und die Einstellungen Ihres Google-Kontos) sind der Weg, diese Rechte wahrzunehmen; für die Aufzeichnungen, die Cloudflare von der Verbindung zum Laternenzähler aufbewahren kann, siehe die <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Datenschutzerklärung von Cloudflare</a>. Wenn Sie nicht sicher sind, wo Sie anfangen sollen, <a href="mailto:neonexalabs@gmail.com">schreiben Sie uns</a>, und wir helfen Ihnen, die richtige Stelle zu finden.</p>
+</section>
+<section class="card" id="changes-to-this-policy">
+<h2><span class="badge b-blueprint"></span><span>Änderungen an dieser Datenschutzerklärung</span></h2>
+<p>Wir können diese Datenschutzerklärung aktualisieren, zum Beispiel wenn wir eine Funktion hinzufügen. Das Datum unter „Gültig ab“ oben ändert sich dann, und eine Änderung, die mehr Informationen erfasst, wird veröffentlicht, bevor das Update, das sie braucht, erscheint.</p>
+</section>
+<section class="card" id="contact">
+<h2><span class="badge b-parcel"></span><span>Kontakt</span></h2>
+<p>NeonexaLabs<br>
+<a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></p>
+</section>
+</main>
+<footer>
+<div class="isles" aria-hidden="true"><span class="isle b-isle_wilderness"></span><span class="isle b-isle_workshop"></span><span class="isle b-isle_town"></span><span class="isle b-isle_portal"></span></div>
+<p>Tiny Archipelago &middot; NeonexaLabs &middot; Gültig ab <time datetime="2026-10-22">22. Oktober 2026</time></p>
+</footer>
+</div>
+</body>
+</html>
