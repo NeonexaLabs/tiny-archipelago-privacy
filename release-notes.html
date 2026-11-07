@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Release notes - Tiny Archipelago</title>
+<meta name="description" content="What each version of Tiny Archipelago brought, told gently.">
+<meta name="theme-color" content="#8fcdf3">
+<meta name="color-scheme" content="only light">
+<link rel="icon" href="assets/favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://neonexalabs.github.io/tiny-archipelago-privacy/release-notes.html">
+<link rel="alternate" hreflang="en" href="https://neonexalabs.github.io/tiny-archipelago-privacy/release-notes.html">
+<link rel="alternate" hreflang="es" href="https://neonexalabs.github.io/tiny-archipelago-privacy/release-notes-es.html">
+<link rel="alternate" hreflang="de" href="https://neonexalabs.github.io/tiny-archipelago-privacy/release-notes-de.html">
+<link rel="alternate" hreflang="x-default" href="https://neonexalabs.github.io/tiny-archipelago-privacy/release-notes.html">
+<link rel="preload" href="assets/fonts/Nunito.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Nunito;src:url(assets/fonts/Nunito.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
+:root{--sky:#8fcdf3;--sky-light:#e4f4fd;--panel:#fff8ec;--edge:#ead6b8;--text:#5b4636;--muted:#7a6652;--green:#7cc25b;--green-dark:#3f7a2b;
+  --gold:#f2c35b;--gold-dark:#c9962e;--chip:#fffdf7;--btn:#fff1d6;--btn-edge:#e3c9a0;--callout:#e3f2d3;--callout-edge:#5a9a40;--callout-soft:#b9dda3;--th:#f6e7cc}
+*{box-sizing:border-box}
+html{color-scheme:only light;scroll-behavior:smooth;scroll-padding-top:16px}
+body{position:relative;margin:0;color:var(--text);background:var(--sky-light) linear-gradient(var(--sky),#c6e7f9 440px,var(--sky-light) 900px) no-repeat;
+  font:600 1rem/1.62 Nunito,"Trebuchet MS","Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+.sky{position:absolute;top:0;left:0;right:0;height:720px;overflow:hidden;pointer-events:none}
+.cloud{position:absolute;background:linear-gradient(168deg,#fff 50%,#eef4fb 50% 72%,#dce8f4 72%);animation:float-in 5s ease-out both;
+  clip-path:polygon(4% 96%,0 70%,10% 50%,26% 48%,34% 22%,52% 6%,70% 20%,78% 40%,92% 44%,100% 70%,96% 94%,72% 100%,48% 92%,22% 100%)}
+.c3,.c5{clip-path:polygon(3% 100%,0 72%,12% 56%,30% 54%,42% 30%,58% 22%,72% 40%,90% 38%,100% 62%,97% 100%,70% 92%,38% 100%)}
+.c2,.c4{scale:-1 1}
+.c1{left:3%;top:12px;width:150px;height:62px}
+.c2{right:4%;top:30px;width:110px;height:46px}
+.c3,.c4,.c5{display:none}
+@keyframes float-in{from{transform:translateX(-30px)}}
+.wrap{position:relative;max-width:720px;margin:0 auto;padding:52px 16px 56px}
+.hero{display:block;width:100%;height:auto;border:4px solid var(--panel);border-radius:22px;background:#cfe9fb;box-shadow:0 10px 26px rgba(84,56,30,.24)}
+.title-card{position:relative;margin:-14px 10px 0;padding:16px 20px 18px}
+h1{margin:0 0 8px;font-size:clamp(1.9rem,7vw,2.6rem);line-height:1.1;font-weight:900}
+.meta{display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;align-items:baseline;margin:0}
+.meta div{display:contents}
+.meta dt{color:var(--muted);font-weight:700}
+.meta dd{margin:0;min-width:0;font-weight:700;overflow-wrap:anywhere}
+.mail{position:relative}
+.mail::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-10px}
+.callout{margin:24px 0 0}
+.jump{margin:22px 0 6px}
+.jump p{margin:0 0 8px;color:var(--muted);font-size:.9rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+nav ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+nav li{margin:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:6px 15px;color:var(--text);font-size:.95rem;font-weight:800;line-height:1.3;
+  text-decoration:none;background:var(--btn);border:2px solid var(--btn-edge);border-bottom-width:4px;border-radius:14px}
+nav a:hover{background:var(--callout);border-color:var(--callout-edge);color:var(--text)}
+nav a:active{background:#f1dfc0;padding:8px 15px 6px;border-bottom-width:2px}
+.title-card,.card,.callout{background:var(--panel);border:2px solid var(--edge);border-radius:18px;box-shadow:0 4px 12px rgba(84,56,31,.18)}
+.card,.callout{padding:18px 22px 20px}
+.card>:last-child,.callout>:last-child{margin-bottom:0}
+.card{margin:16px 0}
+.callout{background:var(--callout);border-color:var(--callout-edge)}
+h2{display:flex;align-items:center;gap:12px;margin:0 0 10px;font-size:clamp(1.3rem,5vw,1.65rem);line-height:1.2;font-weight:900}
+h2 span{min-width:0;overflow-wrap:anywhere}
+.badge{flex:none;width:44px;height:44px;background:var(--chip) center/28px no-repeat;border:2px solid var(--edge);border-radius:14px}
+.callout .badge{border-color:var(--callout-soft)}
+p,li{text-wrap:pretty}
+p,li{overflow-wrap:break-word}
+li{margin:5px 0}
+ul{padding-left:1.3em}
+li::marker{color:var(--green)}
+a{color:var(--green-dark);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:#2c5a1d}
+strong{color:#4a3628;font-weight:800}
+.tablewrap{overflow-x:auto;margin:14px 0;border:2px solid var(--edge);border-radius:14px;background:var(--chip)}
+table{border-collapse:collapse;width:100%}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
+th{background:var(--th);font-weight:800}
+tr:last-child td{border-bottom:0}
+footer{margin-top:40px;padding-top:6px;text-align:center;color:var(--muted);font-size:.95rem}
+.isles{display:flex;justify-content:center;gap:12px;margin:0 0 10px}
+.isle{width:40px;height:40px;background:center/contain no-repeat}
+footer p{margin:0;text-wrap:balance}
+:focus-visible{outline:3px solid var(--green-dark);outline-offset:3px}
+.rows{display:none;margin:12px 0;padding:0;list-style:none}
+.rows li{margin:0 0 12px;padding:8px 16px 10px;background:var(--chip);border:2px solid var(--edge);border-bottom-width:4px;border-radius:14px}
+.rows p{margin:0;font-size:1.08rem;font-weight:800}
+.rows dl{margin:0}
+.rows dt{margin-top:6px;color:var(--muted);font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.rows dd{margin:0}
+@media (max-width:640px){
+  .card,.callout{padding-left:18px;padding-right:18px}
+  .tablewrap{display:none}
+  .rows{display:block}
+}
+@media (max-width:420px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .title-card,.card,.callout{padding-left:16px;padding-right:16px}
+}
+@media (max-width:371px){
+  .meta{grid-template-columns:1fr}
+  .meta dt{font-size:.875rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+  .meta dd{margin-bottom:8px}
+}
+@media (min-width:641px){
+  body{font-size:1.125rem}
+  .title-card{padding-left:28px;padding-right:28px}
+  .card,.callout{padding-left:28px;padding-right:28px}
+}
+@media (min-width:900px){
+  .c3,.c4,.c5{display:block}
+  .c1{left:6%;top:50px;width:190px;height:78px}
+  .c2{right:7%;top:130px;width:140px;height:58px}
+  .c3{left:3%;top:330px;width:170px;height:70px}
+  .c4{right:3%;top:470px;width:200px;height:82px}
+  .c5{left:9%;top:640px;width:150px;height:62px}
+}
+@media (max-height:560px){
+  .hero{width:auto;max-width:100%;max-height:40vh;margin-left:auto;margin-right:auto}
+  .title-card{margin-top:12px}
+}
+@media (prefers-contrast:more){:root{--edge:#a8854f;--btn-edge:#a8854f}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cloud{animation:none}}
+@media print{
+  body{background:#fff}
+  .sky,.jump,.hero{display:none}
+  .card,.callout,.title-card{box-shadow:none;break-inside:avoid}
+  .title-card{margin:0}
+  a[href^="http"]::after{content:" (" attr(href) ")";overflow-wrap:anywhere}
+}
+
+.langs{margin:0 0 14px}
+.langs a[aria-current]{padding:8px 15px 6px;background:var(--callout);border-color:var(--callout-edge);border-bottom-width:2px}
+.langs a[aria-current]::before{content:"";flex:none;width:.4em;height:.8em;margin:-.2em .65em 0 .2em;border:solid currentColor;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.notice{margin:14px 0 0;padding:10px 14px;background:var(--btn);border:2px solid var(--btn-edge);border-left:8px solid var(--gold-dark);border-radius:14px}
+h1{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:560px){
+  html:not([lang=en]) .meta{grid-template-columns:1fr}
+  html:not([lang=en]) .meta dt{font-size:.875rem;font-weight:800;letter-spacing:0;text-transform:none}
+  html:not([lang=en]) .meta dd{margin-bottom:8px}
+}
+@media print{.langs{display:none}}
+.released{margin:-4px 0 10px;color:var(--muted);font-weight:700}
+.b-isle_wilderness{background-image:url(assets/icons/isle_wilderness.png)}
+.b-isle_workshop{background-image:url(assets/icons/isle_workshop.png)}
+.b-isle_town{background-image:url(assets/icons/isle_town.png)}
+.b-isle_portal{background-image:url(assets/icons/isle_portal.png)}
+.b-blueprint{background-image:url(assets/icons/blueprint.png)}
+.b-capybara{background-image:url(assets/icons/capybara.png)}
+.b-chart{background-image:url(assets/icons/chart.png)}
+.b-chest{background-image:url(assets/icons/chest.png)}
+.b-clock{background-image:url(assets/icons/clock.png)}
+.b-cloud{background-image:url(assets/icons/cloud.png)}
+.b-comfort{background-image:url(assets/icons/comfort.png)}
+.b-festival{background-image:url(assets/icons/festival.png)}
+.b-info{background-image:url(assets/icons/info.png)}
+.b-lock{background-image:url(assets/icons/lock.png)}
+.b-parcel{background-image:url(assets/icons/parcel.png)}
+.b-phone{background-image:url(assets/icons/phone.png)}
+.b-supporter{background-image:url(assets/icons/supporter.png)}
+.b-watch{background-image:url(assets/icons/watch.png)}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span><span class="cloud c5"></span></div>
+<div class="wrap">
+<header>
+<nav class="langs" aria-label="Language"><ul><li><a href="release-notes.html" lang="en" aria-current="page">English</a></li><li><a href="release-notes-es.html" lang="es">Español</a></li><li><a href="release-notes-de.html" lang="de">Deutsch</a></li></ul></nav>
+<img class="hero" src="assets/feature.webp" alt="Tiny Archipelago, a cozy game of floating islands: four small low-poly islands joined by rope bridges, with white clouds around them." width="1024" height="500" fetchpriority="high">
+<div class="title-card">
+<h1>Release notes</h1>
+<dl class="meta">
+<div><dt>App</dt><dd>Tiny Archipelago</dd></div>
+<div><dt>Developer</dt><dd>NeonexaLabs</dd></div>
+<div><dt>Contact</dt><dd><a class="mail" href="mailto:neonexalabs@gmail.com">neonexalabs@gmail.com</a></dd></div>
+<div><dt>Latest version</dt><dd>1.0.0</dd></div>
+</dl>
+</div>
+</header>
+<main>
+
+<section class="card" id="v1-0-0">
+<h2><span>Version 1.0.0</span></h2>
+<p class="released"><time datetime="2026-11-07">2026-11-07</time></p>
+<p>Tiny Archipelago is ready for everyone, and we are so happy to share it with you. Take your time: there is nothing to miss and no reason to hurry.</p>
+<ul>
+<li><strong>Four floating islands, all yours.</strong> Restore them one by one, fill your workshop with machines, decorate the town and adopt friendly capybaras.</li>
+<li><strong>Neighbours who keep each other company.</strong> Put two seats beside a tea table, a campfire, a rug, a koi pond, the fountain or the music box, and two neighbours will sit down together and chat.</li>
+<li><strong>A Field Guide to fill.</strong> Eight kinds of fish bite at dawn, at sunset, in the rain and under the stars, and your guide grows as you meet them.</li>
+<li><strong>Little Steps, a gentle guide.</strong> Short chapters open as you unlock things, one friendly tip at a time, with nothing to finish.</li>
+<li><strong>The Coral Isle.</strong> One more island beyond the portal, with six tide pools where the sea comes in and goes out.</li>
+<li><strong>Your language.</strong> Tiny Archipelago speaks English, Spanish and German, following your phone&rsquo;s language or the one you pick.</li>
+</ul>
+<p>We hope it brings you many calm, happy moments. Tell us what you think!</p>
+</section>
+</main>
+<footer>
+<div class="isles" aria-hidden="true"><span class="isle b-isle_wilderness"></span><span class="isle b-isle_workshop"></span><span class="isle b-isle_town"></span><span class="isle b-isle_portal"></span></div>
+<p>Tiny Archipelago &middot; NeonexaLabs &middot; Latest version 1.0.0</p>
+</footer>
+</div>
+</body>
+</html>

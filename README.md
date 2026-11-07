@@ -4,6 +4,8 @@ The public privacy policy of **Tiny Archipelago**, a cozy low-poly island game f
 
 Read it at https://neonexalabs.github.io/tiny-archipelago-privacy/
 
+Release notes: https://neonexalabs.github.io/tiny-archipelago-privacy/release-notes.html (what each production version brought)
+
 Questions about privacy: neonexalabs@gmail.com
 
 ## About these files
